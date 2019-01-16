@@ -213,3 +213,9 @@ html, body {
     text-align: center;
     line-height: 20px;
 }
+
+@media (max-width: 768px) {
+    .content_promo {
+        flex-direction: column;
+    }
+}
