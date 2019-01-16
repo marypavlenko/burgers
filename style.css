@@ -59,10 +59,6 @@ html, body {
     margin: 0 auto;
 }
 
-.nav {
-    margin-left: 5px;
-}
-
 .nav_menu_list {
     list-style: none;
 }
@@ -71,7 +67,7 @@ html, body {
 .nav_menu__logo,
 .nav_menu__button {
     float: left;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 .nav_menu__item {
@@ -104,8 +100,6 @@ html, body {
 
 .nav_menu__link {
     display: block;
-    padding: 0 10px;
-
     text-decoration: none;
     font-family: UbuntuM, serif;
     font-size: 13px;
@@ -162,6 +156,7 @@ html, body {
 .text_best__bold {
     display: flex;
     justify-content: center;
+    padding-top: 150px;
 
     text-decoration: none;
     font-family: Gagalin, serif;
@@ -176,7 +171,9 @@ html, body {
 
 .best__item {
     display: flex;
-    margin-left: 20px;
+    margin-left: 120px;
+    padding-top: 40px;
+    width: 20%;
     flex-direction: column;
     align-items: center;
 }
