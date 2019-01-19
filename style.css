@@ -211,29 +211,33 @@ html, body {
 
 .section-reviews__container {
     display: flex;
+    height: 100vh;
 }
 
 .section-reviews__content {
     position: relative;
-    justify-content: space-between;
+    flex-basis: 25%;
+    height: 50%;
 }
 
-.section-reviews__img {
-    max-height: 325px;
-    max-width: 275px;}
+.selection-reviews__img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
 
 .section-reviews__text {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .section-reviews__content:hover .section-reviews__text {
-    position: absolute
-    max-height: 325px;
-    max-width: 275px;
-
-    background: rgba(181, 186, 189, 0.7);
+    display: flex;
 }
-
 
 
 
