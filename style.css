@@ -231,6 +231,8 @@ html, body {
 .section-reviews__img {
     width: 100%;
     height: 100%;
+    filter: grayscale(100%);
+
     object-fit: cover;
     object-position: 50% 50%;
 }
