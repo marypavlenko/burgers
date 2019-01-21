@@ -245,9 +245,9 @@ html, body {
 
 .section-reviews__content:hover .section-reviews__text {
     display: block;
-    padding-top: 40px;
-    padding-top: calc(40px);
-
+    height: calc(100% - 100px);
+    width:calc(100% - 40px);
+    padding: 50px 20px;
 
     color: white;
     background-color: rgba(20, 20, 20, 0.7);
