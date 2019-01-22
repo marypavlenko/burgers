@@ -261,13 +261,13 @@ html, body {
 }
 
 .section-reviews__text {
+    margin-bottom: 30px;
     font-family: UbuntuM, serif;
     font-size: 14px;
     line-height: 20px;
 }
 
 .section-reviews__button {
-    margin-top: 15px;
     padding: 15px;
 
     text-decoration: none;
@@ -293,13 +293,6 @@ html, body {
         max-width: 768px;
         height: 100vh;
         margin: 0 auto;
-    }
-
-    .section-promo {
-        height: 100vh;
-        width: 100vw;
-        background-image: url(image/bg/bg-promo.png);
-        background-size: cover;
     }
 
     .section-promo {
@@ -362,8 +355,65 @@ html, body {
         color: white;
         text-transform: uppercase;
     }
+    .section-best {
+        background-image: url(image/bg/bg-best.png);
+        background-size: cover;
+    }
 
- }
+    .section-best__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section-best__title {
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+
+        text-decoration: none;
+        font-family: Gagalin, serif;
+        font-size: 72px;
+        color: #2f3234;
+        text-transform: uppercase;
+    }
+
+    .section-best__wrapper {
+        display: flex;
+    }
+
+    .section-best__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40%;
+    }
+
+    .section-best__icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .section-best__item-title {
+        text-decoration: none;
+        font-family: Lifehack, serif;
+        font-size: 24px;
+        color: #2f3234;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    .section-best__item-text {
+        text-decoration: none;
+        font-family: UbuntuM, serif;
+        font-size: 14px;
+        color: #2f3234;
+        text-align: center;
+        line-height: 20px;
+    }
+
+}
 
 @media (max-width: 480px) {
     .container {
@@ -446,5 +496,62 @@ html, body {
         flex-direction: column;
         align-items: center;
         margin-bottom: 40%;
+    }
+    .section-best {
+        background-image: url(image/bg/bg-best.png);
+        background-size: cover;
+    }
+
+    .section-best__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section-best__title {
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+
+        text-decoration: none;
+        font-family: Gagalin, serif;
+        font-size: 72px;
+        color: #2f3234;
+        text-transform: uppercase;
+    }
+
+    .section-best__wrapper {
+        display: flex;
+    }
+
+    .section-best__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40%;
+    }
+
+    .section-best__icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .section-best__item-title {
+        text-decoration: none;
+        font-family: Lifehack, serif;
+        font-size: 24px;
+        color: #2f3234;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    .section-best__item-text {
+        text-decoration: none;
+        font-family: UbuntuM, serif;
+        font-size: 14px;
+        color: #2f3234;
+        text-align: center;
+        line-height: 20px;
     }
 }
