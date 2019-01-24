@@ -327,100 +327,62 @@ html, body {
 
 
 @media (max-width: 768px) {
-    .wrapper {
-        overflow: hidden;
-    }
 
     .container {
         max-width: 768px;
-        min-height: 650px;
-        height: 100%;
-        margin: 0 auto;
-    }
-
-    .section {
-        height: 100vh;
     }
 
     /*Promo block*/
-    .section-promo {
-        background-image: url(image/bg/bg-promo.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50%;
-    }
-
     .section-promo__container {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
+        padding: 0 50px;
     }
 
     .header {
-        display: flex;
         width: 100%;
         justify-content: space-between;
-        align-items: center;
-    }
-
-    .logo {
-        left: 5%;
     }
 
     .nav__item {
         display: none;
     }
+    .nav__list {
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
 
     .nav__button-order {
         display: block;
-        margin-right: 20%;
     }
 
     .nav__menu-burger {
         display: block;
-        margin-right: 30%;
+        margin-right: 20px;
         width: 30px;
         height: 30px;
         background-image: url(image/icons/burger-menu.svg);
         background-repeat: no-repeat;
+        border: none;
     }
 
-
-
-    .section-promo__content {
+    .nav__menu-burger:hover .nav__item {
         display: flex;
-        width: 100%;
-    }
-
-    .section-promo__content-img {
-        flex-basis: 50%;
+        flex-direction: column;
+        align-items: center;
     }
 
     .promo__img-burger {
-        width: 400px;
+        width: 350px;
+        clear: both;
     }
 
     .section-promo__title {
-        display: block;
-        font-family: Gagalin, sans-serif;
-        color: #f9b43b;
+        clear: both;
         font-size: 75px;
     }
 
     .section-promo__text {
-        display: block;
-        font-family: Lifehack, serif;
-        color: white;
+        clear: both;
         font-size: 60px;
-        line-height: 70px;
-    }
-
-    .section-promo__scroll {
-        margin-bottom: 30px;
-        width: 30px;
-        height: 30px;
-        background-image: url(image/icons/arrow-scroll.svg);
-        background-repeat: no-repeat;
     }
 }
