@@ -372,16 +372,19 @@ html, body {
     }
 
     .promo__img-burger {
+        display: block;
         width: 350px;
         clear: both;
     }
 
     .section-promo__title {
+        display: block;
         clear: both;
         font-size: 75px;
     }
 
     .section-promo__text {
+        display: block;
         clear: both;
         font-size: 60px;
     }
