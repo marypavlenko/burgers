@@ -194,23 +194,28 @@ html, body {
     flex-direction: column;
     align-items: center;
 }
-
-.section-best__icon-meat {
-     width: 100px;
-     height: 150px;
-    background: url(image/icons/meat.svg) no-repeat center;
+.section-best__icon {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.section-best__icon-hands {
-    width: 80px;
+.section-best__icon--meat {
+    width: 100px;
     height: 150px;
-    background: url(image/icons/hand.svg) no-repeat center;
+    background-image: url(image/icons/meat.svg);
 }
 
-.section-best__icon-natural {
+.section-best__icon--hands {
     width: 80px;
     height: 150px;
-    background: url(image/icons/natural.svg) no-repeat center;
+    background-image: url(image/icons/hand.svg);
+}
+
+.section-best__icon--natural {
+    width: 90px;
+    height: 150px;
+    background-image: url(image/icons/natural.svg);
 }
 
 .section-best__item-title {
@@ -790,28 +795,21 @@ html, body {
     }
 
     .section-best__icon-meat {
-        display: block;
-        width: 80px;
-        height: 80px;
-        background-size: 60%;
+        width: 97px;
+        height: 89px;
     }
 
     .section-best__icon-hands {
-        display: block;
-        width: 80px;
-        height: 80px;
-        background-size: 60%;
+        width: 97px;
+        height: 89px;
     }
 
     .section-best__icon-natural {
-        display: block;
-        width: 80px;
-        height: 80px;
-        background-size: 60%;
+
     }
 
     .section-best__item {
-        display: flex;
+        flex-direction: row;
     }
 
     .section-best__item-title {
