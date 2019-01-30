@@ -144,51 +144,76 @@
     </div>
 </section>
 <section class="section section-form">
-    <div class="section-form__container">
+    <div class="container section-form__container">
         <div class="section-form__content-text">
             <h1 class="title section-form__title">Order a delivery</h1>
         </div>
-        <div>
-        <div class="section-form__content--form-input">
-            <form action="#" method="post">
-                <label class="label" for="name">Name</label><br>
-                <input id="name" type="text" name="name"><br>
+        <div class="section-form__form">
+            <div class="section-form__form--input">
+                <form action="#" method="post">
 
-                <label class="label" for="phone">Phone number</label><br>
-                <input id="phone"type="text" name="phone"><br>
+                    <div class="grid--name">
+                        <div class="grid--name-content">
+                            <label class="label" for="name">Name</label><br>
+                            <input class="input input-name" id="name" type="text" name="name">
+                        </div>
+                        <div class="grid--name-content">
+                            <label class="label" for="phone">Phone number</label><br>
+                            <input class="input input-name" id="phone"type="text" name="phone">
+                        </div>
+                    </div>
 
-                <label class="label" for="street">Street</label><br>
-                <input id="street"type="text" name="street"><br>
+                    <label class="label" for="street">Street</label><br>
+                    <input class="input input-street" id="street"type="text" name="street"><br>
 
-                <label class="label" for="house">House number</label><br>
-                <input id="house"type="text" name="house"><br>
+                    <div class="grid--house">
+                        <div class="grid--house-content grid--house-number">
+                            <label class="label" for="house">House</label><br>
+                            <input class="input" id="house"type="text" name="house">
+                        </div>
 
-                <label class="label" for="building">Building </label><br>
-                <input id="building"type="text" name="building"><br>
+                        <div class="grid--house-content grid--house-building">
+                            <label class="label" for="building">Building </label><br>
+                            <input class="input" id="building"type="text" name="building">
+                        </div>
 
-                <label class="label" for="apartment">Apartment</label><br>
-                <input id="apartment"type="text" name="apartment"><br>
+                        <div class="grid--house-content grid--house-apartment">
+                            <label class="label" for="apartment">Apartment</label><br>
+                            <input class="input" id="apartment"type="text" name="apartment">
+                        </div>
 
-                <label class="label" for="floor">Floor</label><br>
-                <input id="floor"type="text" name="floor"><br>
-            </form>
+                        <div class="grid--house-content grid--house-floor">
+                            <label class="label" for="floor">Floor</label><br>
+                            <input class="input" id="floor"type="text" name="floor">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="section-form__form--submit">
+                <form action="#" method="post">
+                    <div class="grid-comment">
+                        <label class="label" for="comment">Comment</label><br>
+                        <textarea class="input input-comment" id="comment" rows="3" cols="20"></textarea><br>
+                    </div>
+
+                    <div class="grid-radio">
+                        <input id="cash" type="radio">
+                        <label class="label" for="cash">Need the change</label>
+                        <input id="card" type="radio" checked>
+                        <label class="label" for="card">Payment by card</label><br>
+                    </div>
+
+                    <div class="grid-checkbox">
+                        <input type="checkbox" checked><label class="label">Don't call back</label><br>
+                    </div>
+
+                    <div class="grid-buttons">
+                        <input class="button" type="submit" value="Order">
+                        <input class="button button-clear" type="reset" value="Clear">
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="section-form__content--form-submit">
-            <form action="#" method="post">
-                <label class="label" for="comment">Comment</label><br>
-                <textarea id="comment" rows="3" cols="20"></textarea><br>
-
-                <input id="cash" type="radio">
-                <label class="label" for="cash">Need the change.</label>
-                <input id="card" type="radio" checked>
-                <label class="label" for="card">Payment by card</label>
-
-                <input type="checkbox" checked><label class="label">Don't call back</label><br>
-                <input class="button" type="submit" value="Order">
-                <input class="button button-clear" type="reset" value="Clear">
-            </form>
-        </div>
-    </div>
     </div>
 </section>
 <section class="section section-map">

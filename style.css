@@ -336,18 +336,91 @@ html, body {
 .section-form__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
+.section-form__content-text {
+    display: flex;
+}
+
 .section-form__title {
+    margin: 10% 0 5%;
     color: #f9b43b;
+}
+
+.section-form__form {
+    display: flex;
+    flex-direction: row;
 }
 
 .label {
     color: white;
     font-family: UbuntuM, serif;
     font-size: 14px;
+}
+
+.input {
+    border-radius: 5px;
+    border-color: white;
+    background-color: white;
+    height: 35px;
+    width: 100px;
+}
+
+.section-form__form--input {
+    max-width: 50%;
+    margin-right: 3%;
+}
+
+.input-name {
+    width: 221px;
+}
+
+.grid--name {
+    display: flex;
+    flex-direction: row;
+}
+
+.grid--name-content {
+    margin: 25px 13px 25px 0;
+}
+
+.input-street {
+    width: 460px;
+}
+
+.grid--house {
+    display: flex;
+    flex-direction: row;
+}
+
+.grid--house-content {
+    margin: 25px 13px 25px 0;
+}
+
+.section-form__form--submit {
+    max-width: 50%;
+}
+
+.input-comment {
+    width: 460px;
+    height: 110px;
+}
+
+.grid-comment {
+    margin: 25px 0;
+}
+
+.grid-radio {
+    margin: 25px 0;
+}
+
+.grid-checkbox {
+    margin: 25px 0;
+}
+
+.button-clear {
+    background: transparent;
 }
 
 
@@ -590,13 +663,42 @@ html, body {
         margin-top: 5%;
     }
 
+    /*Form block*/
+
+    .section-form__form {
+        flex-direction: column;
+    }
+
+    .grid--name-content {
+        margin: 15px 13px 15px 0;
+    }
+
+    .grid--house-content {
+        margin: 15px 13px 10px 0;
+    }
+
+    .grid-comment {
+        margin: 10px 0;
+    }
+
+    .grid-radio {
+        margin: 15px 0;
+        width: 480px;
+    }
+
+    .grid-checkbox {
+        margin: 15px 0;
+    }
+
+    .button-clear {
+        background: transparent;
+    }
+
     /*Footer*/
 
     .section-footer__container {
         margin-left: 5%;
     }
-
-
 }
 
 @media (max-width: 550px) {
@@ -678,6 +780,51 @@ html, body {
 
     .section-best__item--natural {
         margin-bottom: 10%;
+    }
+    /*Form block*/
+    .section-form__container {
+        padding: 0 30px;
+    }
+
+
+
+    .section-form__title {
+    font-size: 50px;
+    text-align: center;
+    }
+
+    .section-form__form {
+        flex-direction: column;
+        margin-left: 25%;
+    }
+
+    .input {
+        width: 77px;
+    }
+
+    .section-form__form--input {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .input-name {
+        width: 170px;
+    }
+
+    .grid--name-content {
+        margin: 10px 13px 10px 0;
+    }
+
+    .input-street {
+        width: 360px;
+    }
+
+    .grid--house-content {
+        margin: 10px 5px;
+    }
+
+    .input-comment {
+        width: 360px;
     }
 
     /*Footer*/

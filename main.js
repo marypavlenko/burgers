@@ -70,13 +70,13 @@ var placemarks = [
             '</div>'
         ]
     }
-];
+],
 
 geoObjects = [];
 
 
 function init () {
-    var map = new ymaps.Map("map",{
+    var map = new ymaps.Map('map',{
         center: [55.75399400, 37.62209300],
         zoom: 14,
         controls: ['zoomControl'],
@@ -99,17 +99,17 @@ function init () {
     }
 
     var clusterer = new ymaps.Clusterer({
-        clusterIcons [
+        clusterIcons: [
             {
                 href: 'image/icon/logo.svg',
                 size: [100, 100],
                 offset: [-50, -50]
             }
-        ]
+        ],
+        clusterIconContentLayout: null
     });
 
     map.geoObjects.add(clusterer);
-    // map.geoObjects.add(placemarks);
     clusterer.add(geoObjects);
 }
 
