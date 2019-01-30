@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Burgers</title>
+    <meta charset="UTF-8">
     <link rel="normalize" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -35,7 +35,7 @@
             </div>
             <div class="section-promo__content-text">
                 <h1 class="section-promo__content-text-list">
-                    <span class="section-promo__title">We Make</span>
+                    <span class="title section-promo__title">We Make</span>
                     <span class="section-promo__text">The Best</span>
                     <span class="section-promo__text">Natural Burgers</span>
                 </h1>
@@ -62,7 +62,7 @@
                    <p class="section-best__item-text">We’ve always been real sticklers for the manner in which we build our burgers. We change up the ingredients going into the patty quite often. For us, there are certain tastes on a burger that when in combination with each other enhance their flavors, plus there are some things that just get messy when placed next to each other.</p>
                </div>
            </div>
-           <div class="section-best__item">
+           <div class="section-best__item section-best__item--natural">
 
                <div class="section-best__icon section-best__icon--natural"></div>
                <div class="section-best__block">
@@ -143,6 +143,77 @@
         </div>
     </div>
 </section>
+<section class="section section-form">
+    <div class="section-form__container">
+        <div class="section-form__content-text">
+            <h1 class="title section-form__title">Order a delivery</h1>
+        </div>
+        <div class="section-form__content--form-input">
+            <form action="#" method="post">
+
+                <label class="label" for="name">Name</label><br>
+                <input id="name" type="text" name="name"><br>
+
+                <label class="label" for="phone">Phone number</label><br>
+                <input id="phone"type="text" name="phone"><br>
+
+                <label class="label" for="street">Street</label><br>
+                <input id="street"type="text" name="street"><br>
+
+                <label for="house">House number</label><br>
+                <input id="house"type="text" name="house"><br>
+
+                <label for="building">Building </label><br>
+                <input id="building"type="text" name="building"><br>
+
+                <label for="apartment">Apartment</label><br>
+                <input id="apartment"type="text" name="apartment"><br>
+
+                <label for="floor">Floor</label><br>
+                <input id="floor"type="text" name="floor"><br>
+            </form>
+        </div>
+        <div class="section-form__content--form-submit">
+            <form action="#" method="post">
+                <label for="comment">Comment</label><br>
+                <textarea id="comment" rows="3" cols="20"></textarea><br>
+
+                <input id="cash" type="radio">
+                <label for="cash">Need the change.</label>
+                <input id="card" type="radio" checked>
+                <label for="card">Payment by card</label>
+
+                <input type="checkbox" checked><label>Don't call back</label><br>
+                <input class="button" type="submit" value="Order">
+                <input class="button button-clear" type="reset" value="Clear">
+            </form>
+        </div>
+
+    </div>
+</section>
+<section class="section section-map">
+    <div id="map" class="map"></div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=en_US" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+</section>
+<section class="section-footer">
+    <div class="container section-footer__container">
+        <div class="section-footer__content">
+            <p class="section-footer__text">Moscow, st. Lesnaya, 5C</p>
+            <div class="section-footer__text--number">
+                <div class="section-footer__icon--number"></div>
+                <a class="section-footer__phone-number" href="tel:+7 495 424 8000">+7 495 424 8000</a>
+            </div>
+        </div>
+        <div class="section-footer__icons">
+            <div class="section-footer__icon section-footer__icon--vk"></div>
+            <div class="section-footer__icon section-footer__icon--fb"></div>
+            <div class="section-footer__icon section-footer__icon--in"></div>
+            <div class="section-footer__icon section-footer__icon--tw"></div>
+        </div>
+    </div>
+</section>
+
 
 </div>
 </body>

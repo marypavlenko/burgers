@@ -53,6 +53,12 @@ html, body {
     height: 100vh;
 }
 
+.title {
+    font-family: Gagalin, sans-serif;
+    font-size: 72px;
+
+}
+
 /*Promo block*/
 
 .section-promo {
@@ -136,7 +142,6 @@ html, body {
 
 .section-promo__title {
     display: block;
-    font-family: Gagalin, sans-serif;
     color: #f9b43b;
     font-size: 85px;
 }
@@ -178,7 +183,6 @@ html, body {
     margin-top: 10%;
 
     text-decoration: none;
-    font-family: Gagalin, serif;
     font-size: 72px;
     color: #2f3234;
     text-transform: uppercase;
@@ -201,20 +205,23 @@ html, body {
 }
 
 .section-best__icon--meat {
-    width: 100px;
-    height: 150px;
+    width: 97px;
+    height: 89px;
+    min-width: 97px;
     background-image: url(image/icons/meat.svg);
 }
 
 .section-best__icon--hands {
-    width: 80px;
-    height: 150px;
+    width: 73px;
+    height: 85px;
+    min-width: 73px;
     background-image: url(image/icons/hand.svg);
 }
 
 .section-best__icon--natural {
-    width: 90px;
-    height: 150px;
+    width: 88px;
+    height: 75px;
+    min-width: 88px;
     background-image: url(image/icons/natural.svg);
 }
 
@@ -318,6 +325,123 @@ html, body {
     border: none;
 }
 
+/*Form block*/
+
+.section-form {
+    background-image: url(image/bg/bg-delivery.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-form__title {
+    color: #f9b43b;
+}
+
+.label {
+    color: white;
+    font-family: UbuntuM, serif;
+    font-size: 14px;
+}
+
+
+/*Map block*/
+
+#map {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*Footer*/
+
+.section-footer {
+    max-height: 60px;
+    background-color: black;
+}
+
+.section-footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-footer__content {
+}
+
+.section-footer__text {
+    color: white;
+    font-family: UbuntuM, serif;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.section-footer__text--number {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-footer__icon--number {
+    margin-right: 5%;
+    width: 12px;
+    height: 11px;
+    background-image: url(image/icons/phone.svg);
+    background-repeat: no-repeat;
+}
+
+.section-footer__phone-number {
+    color: #e45028;
+    font-family: UbuntuB;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.section-footer__icons {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px;
+}
+
+.section-footer__icon {
+    margin-right: 20px;
+}
+
+.section-footer__icon--vk {
+    width: 23px;
+    height: 13px;
+    background-image: url(image/icons/vk.svg);
+    background-repeat: no-repeat;
+}
+
+.section-footer__icon--fb {
+    width: 20px;
+    height: 20px;
+    background-image: url(image/icons/fb.svg);
+    background-repeat: no-repeat;
+}
+.section-footer__icon--in {
+    width: 20px;
+    height: 10px;
+    background-image: url(image/icons/inst.svg);
+    background-repeat: no-repeat;
+}
+.section-footer__icon--tw {
+    width: 20px;
+    height: 16px;
+    background-image: url(image/icons/twitter.svg);
+    background-repeat: no-repeat;
+}
+
+
+/*MediaQueries*/
+
 @media (max-width: 1060px) {
 
     .container {
@@ -334,13 +458,13 @@ html, body {
         justify-content: space-between;
     }
 
+    .nav__list {
+        display: flex;
+        align-items: center;
+    }
+
     .nav__item {
         display: none;
-    }
-    .nav__list {
-        width: 100%;
-        justify-content: space-between;
-        align-items: flex-end;
     }
 
     .nav__button-order {
@@ -349,7 +473,7 @@ html, body {
 
     .nav__menu-burger {
         display: block;
-        margin-right: 20px;
+        margin: 0 20px;
         width: 24px;
         height: 22px;
         background-image: url(image/icons/burger-menu.svg);
@@ -382,25 +506,8 @@ html, body {
     }
 
     /*Best block*/
-
     .section-best__container {
         padding: 0 50px;
-    }
-
-    .section-best__title {
-        margin-top: 10%;
-    }
-
-    .section-best__icon-meat {
-        background-size: 60%;
-    }
-
-    .section-best__icon-hands {
-        background-size: 60%;
-    }
-
-    .section-best__icon-natural {
-        background-size: 60%;
     }
 
     .section-best__item-title {
@@ -408,10 +515,6 @@ html, body {
         line-height: 25px;
     }
 
-    .section-best__item-text {
-        font-size: 16px;
-        line-height: 20px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -421,100 +524,29 @@ html, body {
     }
 
     /*Promo block*/
-    .section-promo__container {
-        padding: 0 50px;
-    }
-
-    .header {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .nav__item {
-        display: none;
-    }
-    .nav__list {
-        width: 100%;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-
-    .nav__button-order {
-        display: block;
-    }
-
-    .nav__menu-burger {
-        display: block;
-        margin-right: 20px;
-        width: 24px;
-        height: 22px;
-        background-image: url(image/icons/burger-menu.svg);
-        background-color: transparent;
-        background-repeat: no-repeat;
-    }
-
-    .section-promo__content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .promo__img-burger {
-        width: 400px;
-    }
-
-    .section-promo__content-text {
-        flex-basis: inherit;
-        margin-top: 0;
-    }
-
     .section-promo__title {
         font-size: 65px;
-        text-align: center;
     }
 
     .section-promo__text {
-        text-align: center;
         font-size: 50px;
     }
 
     /*Best block*/
-
-    .section-best__container {
-        padding: 0 50px;
-    }
-
     .section-best__title {
-        margin-top: 10%;
         font-size: 60px;
     }
 
     .section-best__wrapper {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .section-best__item {
-        display: flex;
+        flex-direction: row;
     }
 
-    .section-best__icon-meat {
-        display: block;
-        width: 80px;
-        height: 80px;
-        background-size: 60%;
-    }
-
-    .section-best__icon-hands {
-        display: block;
-        width: 80px;
-        height: 80px;
-        background-size: 60%;
-    }
-
-    .section-best__icon-natural {
-        display: block;
-        width: 80px;
-        height: 80px;
-        background-size: 60%;
+    .section-best__icon {
+        margin-right: 30px;
     }
 
     .section-best__item-title {
@@ -530,15 +562,9 @@ html, body {
     }
 
     /*Reviews block*/
-
     .section-reviews__content {
         flex-basis: 50%;
-        justify-content: center;
         height: 25%;
-    }
-
-    .section-reviews__img {
-        /*нужно здесь уменьшить изображение на 10 или 20% - пока не понимаю как это сделать*/
     }
 
     .section-reviews__block {
@@ -563,6 +589,14 @@ html, body {
         margin-left: 40%;
         margin-top: 5%;
     }
+
+    /*Footer*/
+
+    .section-footer__container {
+        margin-left: 5%;
+    }
+
+
 }
 
 @media (max-width: 550px) {
@@ -576,187 +610,37 @@ html, body {
         padding: 0 30px;
     }
 
-    .header {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .nav__item {
-        display: none;
-    }
-    .nav__list {
-        width: 100%;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-
-    .nav__button-order {
-        display: block;
-    }
-
-    .nav__menu-burger {
-        display: block;
-        margin-right: 20px;
-        width: 24px;
-        height: 22px;
-        background-image: url(image/icons/burger-menu.svg);
-        background-color: transparent;
-        background-repeat: no-repeat;
-    }
-
-    .section-promo__content {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .promo__img-burger {
         width: 350px;
     }
 
-    .section-promo__content-text {
-        flex-basis: inherit;
-        margin-top: 0;
-    }
-
     .section-promo__title {
         font-size: 60px;
-        text-align: center;
     }
 
     .section-promo__text {
-        text-align: center;
         font-size: 45px;
     }
 
     /*Best block*/
-
-    .section-best__container {
-        padding: 0 50px;
-    }
-
     .section-best__title {
-        margin-top: 10%;
         font-size: 50px;
     }
 
-    .section-best__wrapper {
-        flex-wrap: wrap;
-    }
-
-    .section-best__icon-meat {
-        display: block;
-        width: 80px;
-        height: 80px;
-        background-size: 60%;
-    }
-
-    .section-best__icon-hands {
-        display: block;
-        width: 80px;
-        height: 80px;
-        background-size: 60%;
-    }
-
-    .section-best__icon-natural {
-        display: block;
-        width: 80px;
-        height: 80px;
-        background-size: 60%;
-    }
-
-    .section-best__item {
-        display: flex;
-    }
-
-    .section-best__item-title {
-        font-size: 18px;
-        line-height: 20px;
-        text-align: left;
-    }
-
-    .section-best__item-text {
-        font-size: 14px;
-        line-height: 18px;
-        text-align: left;
-    }
-
     /*Reviews block*/
-
-    .section-reviews__content {
-        flex-basis: 50%;
-        justify-content: center;
-        height: 25%;
-    }
-
-    .section-reviews__img {
-        /*нужно здесь уменьшить изображение на 10 или 20% - пока не понимаю как это сделать*/
-    }
-
-    .section-reviews__block {
-        height: calc(100% - 10px);
-        width:calc(100% - 70px);
-        padding: 5px 35px;
-    }
-
-    .section-reviews__title {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .section-reviews__text {
-        margin-bottom: 0px;
-        font-size: 14px;
-        line-height: 16px;
-        text-align: center;
-    }
-
-    .section-reviews__button {
-        margin-left: 40%;
-        margin-top: 5%;
-    }
 }
 
 @media (max-width: 480px) {
     .container {
         max-width: 480px;
+        padding: 0 5px;
     }
 
     /*Promo block*/
-    .section-promo__container {
-        padding: 0 10px;
-    }
 
-    .header {
-        width: 100%;
+    .section-best__container {
+        display: flex;
         justify-content: space-between;
-    }
-
-    .nav__item {
-        display: none;
-    }
-
-    .nav__list {
-        width: 100%;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-
-    .nav__button-order {
-        display: block;
-    }
-
-    .nav__menu-burger {
-        display: block;
-        margin-right: 20px;
-        width: 24px;
-        height: 22px;
-        background-image: url(image/icons/burger-menu.svg);
-        background-color: transparent;
-        background-repeat: no-repeat;
-    }
-
-    .section-promo__content {
-        flex-direction: column;
         align-items: center;
     }
 
@@ -764,96 +648,52 @@ html, body {
         width: 300px;
     }
 
-    .section-promo__content-text {
-        flex-basis: inherit;
-        margin-top: 0;
-    }
-
     .section-promo__title {
         font-size: 55px;
-        text-align: center;
+        margin-bottom: 10%;
     }
 
     .section-promo__text {
-        text-align: center;
         font-size: 40px;
     }
 
     /*Best block*/
 
-    .section-best__container {
-        padding: 0 50px;
-    }
-
     .section-best__title {
-        margin-top: 10%;
         font-size: 40px;
-    }
-
-    .section-best__wrapper {
-        flex-wrap: wrap;
-    }
-
-    .section-best__icon-meat {
-        width: 97px;
-        height: 89px;
-    }
-
-    .section-best__icon-hands {
-        width: 97px;
-        height: 89px;
-    }
-
-    .section-best__icon-natural {
-
-    }
-
-    .section-best__item {
-        flex-direction: row;
     }
 
     .section-best__item-title {
         font-size: 20px;
-        line-height: 18px;
-        text-align: left;
     }
 
     .section-best__item-text {
-        font-size: 13px;
-        line-height: 16px;
-        text-align: left;
+        font-size: 14px;
+        line-height: 18px;
     }
 
-    /*Reviews block*/
+    .section-best__item {
+        margin: 5px 0;
+    }
 
-    .section-reviews__content {
-        flex-basis: 50%;
+    .section-best__item--natural {
+        margin-bottom: 10%;
+    }
+
+    /*Footer*/
+
+    .section-footer {
+        max-height: 116px;
+    }
+
+    .section-footer__container {
+        flex-direction: column;
         justify-content: center;
-        height: 25%;
+        margin-left: 0;
     }
 
-    .section-reviews__img {
-        /*нужно здесь уменьшить изображение на 10 или 20% - пока не понимаю как это сделать*/
+    .section-footer__text {
+        margin: 0 0;
     }
 
-    .section-reviews__block {
-        height: calc(100% - 10px);
-        width:calc(100% - 70px);
-        padding: 5px 35px;
-    }
-
-    .section-reviews__title {
-        margin-top: 30%;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .section-reviews__text {
-        display: none;
-    }
-
-    .section-reviews__button {
-        margin-left: 20%;
-        margin-top: 5%;
-    }
 }
