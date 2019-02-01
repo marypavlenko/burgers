@@ -70,6 +70,7 @@ html, body {
 
 .section-promo__container {
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -172,6 +173,7 @@ html, body {
 
 .section-best__container {
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -252,7 +254,7 @@ html, body {
 
 .section-reviews__container {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: space-between;
 }
 
@@ -335,28 +337,32 @@ html, body {
 
 .section-form__container {
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
     align-items: center;
 }
 
-.section-form__content-text {
-    display: flex;
-}
-
-.section-form__title {
-    margin: 10% 0 5%;
-    color: #f9b43b;
-}
-
-.section-form__form {
+.section-form__wrapper {
     display: flex;
     flex-direction: row;
 }
 
-.label {
+.section-form__label {
+    display: block;
+    padding-bottom: 8px;
+
     color: white;
     font-family: UbuntuM, serif;
     font-size: 14px;
+}
+
+.section-form__title {
+    margin: 5% auto;
+    color: #f9b43b;
+}
+
+.section-form__title-text {
+    margin: 0;
 }
 
 .input {
@@ -367,56 +373,58 @@ html, body {
     width: 100px;
 }
 
-.section-form__form--input {
-    max-width: 50%;
-    margin-right: 3%;
-}
-
-.input-name {
-    width: 221px;
-}
-
-.grid--name {
+.section-form__name-phone {
     display: flex;
     flex-direction: row;
+    margin: 25px 10px 25px 0;
 }
 
-.grid--name-content {
-    margin: 25px 13px 25px 0;
+.section-form__input-info {
+    width: 221px;
+    margin-right: 10px;
 }
 
-.input-street {
+.section-form__input-street {
     width: 460px;
 }
 
-.grid--house {
+.section-form__house {
     display: flex;
     flex-direction: row;
+    margin: 25px 10px 25px 0;
 }
 
-.grid--house-content {
-    margin: 25px 13px 25px 0;
+.section-form__input-house {
+    margin-right: 14px;
 }
 
-.section-form__form--submit {
-    max-width: 50%;
+.section-form__column-submit {
+    margin-top: 23px;
 }
 
-.input-comment {
+
+.section-form__input-comment {
     width: 460px;
     height: 110px;
 }
 
-.grid-comment {
-    margin: 25px 0;
+.section-form__radio {
+    display: flex;
+    flex-direction: row;
+
+    margin: 10px auto;
 }
 
-.grid-radio {
-    margin: 25px 0;
+.section-form__radio-choice {
+    display: flex;
+    margin-right: 14px;
 }
 
-.grid-checkbox {
-    margin: 25px 0;
+.section-form__checkbox {
+    display: flex;
+    flex-direction: row;
+
+    margin: 10px auto;
 }
 
 .button-clear {
@@ -442,6 +450,7 @@ html, body {
 
 .section-footer__container {
     display: flex;
+    min-height: 100vh;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -501,7 +510,7 @@ html, body {
 }
 .section-footer__icon--in {
     width: 20px;
-    height: 10px;
+    height: 20px;
     background-image: url(image/icons/inst.svg);
     background-repeat: no-repeat;
 }
@@ -586,6 +595,16 @@ html, body {
     .section-best__item-title {
         font-size: 20px;
         line-height: 25px;
+    }
+
+    /*Form block*/
+
+    .section-form__wrapper {
+        flex-direction: column;
+    }
+
+    .section-form__column-submit {
+        margin-top: 0;
     }
 
 }
@@ -699,6 +718,8 @@ html, body {
     .section-footer__container {
         margin-left: 5%;
     }
+
+
 }
 
 @media (max-width: 550px) {
@@ -835,12 +856,12 @@ html, body {
 
     .section-footer__container {
         flex-direction: column;
-        justify-content: center;
-        margin-left: 0;
+        align-items: center;
+        min-height: initial;
     }
 
     .section-footer__text {
-        margin: 0 0;
+        margin: 5px;
     }
 
 }
