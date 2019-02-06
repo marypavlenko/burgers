@@ -322,6 +322,7 @@ html, body {
 .section-dark__order {
     display: flex;
     flex-direction: row;
+    align-content: center;
 }
 
 .section-dark__title-sum {
@@ -385,6 +386,8 @@ html, body {
 }
 
 .section-team__accordion-block {
+    display: flex;
+    flex-direction: row;
     margin: 15px auto;
 }
 
@@ -397,11 +400,6 @@ html, body {
 
 .section-team__inside-block {
     display: none;
-}
-
-.section-team__checkbox:checked + .section-team__label + .section-team__inside-block {
-    display: flex;
-    color: #f9b43b;
 }
 
 .section-team__title-job {
@@ -427,6 +425,14 @@ html, body {
     margin: 0 15px;
     margin-right: 50%;
 }
+
+.section-team__button {
+    width: 9px;
+    height: 7px;
+    background-image: url(image/icons/arrow-down.svg);
+    background-repeat: no-repeat;
+}
+
 
 /*Menu block*/
 .section-menu {
@@ -467,10 +473,6 @@ html, body {
     display: none;
 }
 
-.section-menu__checkbox:checked + .section-menu__text {
-    display: flex;
-    color: #f9b43b;
-}
 
 
 
@@ -1182,12 +1184,9 @@ html, body {
 
     /*Form block*/
 
-    .section {
-         height: 650px;
-    }
-
     .section-form {
-
+        height: 100%;
+        min-height: 480px;
     }
 
 
