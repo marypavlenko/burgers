@@ -71,3 +71,60 @@ function init() {
     });
 }
 
+// Аккордеон
+function openAccordeon (btn) {
+    var activeBtn;
+    var button = document.getElementsByClassName(btn);
+    activeBtn = 'active';
+
+    for (var i = 0; i < button.length; i++) {
+        button[i].addEventListener('click', function () {
+            if (!(this.classList.contains(activeBtn))) {
+                for (var j = 0; j < button.length; j++) {
+                    button[j].classList.remove(activeBtn);
+                    this.classList.add(activeBtn)
+                }
+            } else {
+                this.classList.remove(activeBtn);
+            }
+        })
+    }
+}
+
+openAccordeon('section-team__button');
+openAccordeon('section-menu__button');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
