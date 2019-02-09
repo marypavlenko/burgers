@@ -323,6 +323,8 @@ html, body {
 
 .section-dark__order {
     display: flex;
+    align-items: center;
+    margin-left: 3%;
 }
 
 .section-dark__title-sum {
@@ -389,11 +391,13 @@ html, body {
 
 .section-team__accordion-block {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 15px auto;
 }
 
 .section-team__label {
+    margin: 0;
+    width: 130px;
     font-family: Gagalin, serif;
     font-size: 14px;
     color: #ffffff;
@@ -405,6 +409,10 @@ html, body {
 }
 
 .section-team__button.active + .section-team__inside-block {
+    display: flex;
+}
+
+.section-team__button {
     display: flex;
 }
 
@@ -439,7 +447,7 @@ html, body {
 }
 
 .section-team__icon-arrow {
-    margin-top: 5%;
+    margin: 0;
     width: 9px;
     height: 7px;
     background-color: transparent;
@@ -495,7 +503,17 @@ html, body {
 }
 
 .section-menu__button.active + .section-menu__text {
+    margin: 0;
     display: block;
+    width: 540px;
+    height: 650px;
+    background-color: rgba(20, 20, 20, 0.7);
+    transform: rotate(90deg);
+
+    color: #ffffff;
+    font-family: UbuntuM, serif;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .section-menu__text {
@@ -506,21 +524,28 @@ html, body {
     margin-left: 3%;
 }
 
-.section-menu__accordion-block--meat {
+.section-menu__accordion--meat {
     background-image: url(image/burgers-slider/layer-meat.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border: 0;
+
 }
 
-.section-menu__accordion-block--vegan {
+.section-menu__accordion--vegan {
     background-image: url(image/burgers-slider/layer-vegan.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border: 0;
 }
 
-.section-menu__accordion-block--diet {
+.section-menu__accordion--diet {
     background-image: url(image/burgers-slider/layer-diet.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border: 0;
 }
 
