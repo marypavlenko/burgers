@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="normalize" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 <div class="wrapper">
@@ -105,7 +106,10 @@
                 <h2 class="title section-team__title">Team</h2>
                 <section class="section-team__accordion">
                     <div class="section-team__accordion-block">
-                        <button class="section-team__button"><div class="section-team__icon-arrow"></div><p class="section-team__label">Gustavo Caballero</p></button>
+                        <button class="section-team__button">
+                            <div class="section-team__icon-arrow"></div>
+                            <p class="section-team__label">Gustavo Caballero</p>
+                        </button>
                         <div class="section-team__inside-block">
                             <img src="image/photo/gustavo_caballero.png" alt="Gustavo Caballero" class="section-team__image">
                             <div class="section-team__inside-block--text">
@@ -115,7 +119,10 @@
                         </div>
                     </div>
                     <div class="section-team__accordion-block">
-                        <button class="section-team__button"><div class="section-team__icon-arrow"></div><p class="section-team__label">Aron Davidson</p></button>
+                        <button class="section-team__button">
+                            <div class="section-team__icon-arrow"></div>
+                            <p class="section-team__label">Aron Davidson</p>
+                        </button>
                         <div class="section-team__inside-block">
                             <img src="image/photo/aron_davidson.png" alt="Aron Davidson" class="section-team__image">
                             <div class="section-team__inside-block--text">
@@ -125,7 +132,10 @@
                         </div>
                     </div>
                     <div class="section-team__accordion-block">
-                        <button class="section-team__button"><div class="section-team__icon-arrow"></div><p class="section-team__label">Gordon Ramsay</p></button>
+                        <button class="section-team__button">
+                            <div class="section-team__icon-arrow"></div>
+                            <p class="section-team__label">Gordon Ramsay</p>
+                        </button>
                         <div class="section-team__inside-block">
                             <img src="image/photo/gordon_ramsay.png" alt="Gordon Ramsay" class="section-team__image">
                             <div class="section-team__inside-block--text">
@@ -156,17 +166,29 @@
             <div class="section-menu__content">
                 <h2 class="title section-menu__title">Menu</h2>
                 <section class="section-menu__accordion">
-                    <div class="section-menu__accordion--meat">
-                        <div class="section-menu__button"><p class="section-menu__label">Meat Lovers Meals</p></div>
-                        <p class="section-menu__text">The kitchen staff works on the front lines of restaurant, cafeteria, and catering kitchens.</p>
+                    <div class="section-menu__item">
+                        <div class="section-menu__button section-menu__button--meat">
+                            <h4 class="section-menu__label">Meat Lovers Meals</h4>
+                        </div>
+                        <!--<div class="section-menu__inside-text">-->
+                            <p class="section-menu__text">If you like big, bold, mouthwatering burgers, then you’re going to love ours burgers. Each burger we cook with love. A simple hamburger hardly needs instructions. First, we make a patty out of ground beef. Then, cook we it in a pan, on the grill, or for a few minutes under the broiler. We make burgers with the best  secret sauce. The secret sauce is a blend of ketchup, mayo, sweet pickle relish, and white vinegar. As the beef patties cook, they get brushed with yellow mustard. We serve ours burgers on a soft bun, and top with big slices of tomato and crisp lettuce.</p>
+                        <!--</div>-->
                     </div>
-                    <div class="section-menu__accordion--vegan">
-                        <div class="section-menu__button"><p class="section-menu__label">Vegetarian Meals</p></div>
-                        <p class="section-menu__text">Part of a larger food preparation and delivery team, the kitchen staff works in a fast-paced and sometimes demanding.</p>
+                    <div class="section-menu__item">
+                        <div class="section-menu__button section-menu__button--vegan">
+                            <h4 class="section-menu__label">Vegetarian Meals</h4>
+                        </div>
+                        <!--<div class="section-menu__inside-text">-->
+                            <p class="section-menu__text">Ditch the meat and try one of our veggie burger burgers at your next barbecue, or for a filling midweek meal. If you're after some healthy vegetarian burgers look no further than these, made with chickpeas plus a delicious mint and pomegranate slaw on the side. We cook the bulghar for 5 mins. Meanwhile, we fry the onions and garlic until starting to turn golden. We add the carrots and chilli until the carrots soften. We add the cumin, ground coriander, coriander stalks and lime zest. We tip the chickpeas into a bowl then add the eggs and miso to form a chunky paste.Than we take off the heat, shape into eight burgers and place on a baking sheet lined. We bake until starting to turn golden. We serve with the burgers and lime wedges. </p>
+                        <!--</div>-->
                     </div>
-                    <div class="section-menu__accordion--diet">
-                        <div class="section-menu__button"><p class="section-menu__label">Diet Meals</p></div>
-                        <p class="section-menu__text">Organize the kitchen and do food prep to streamline cooking and meal presentation, including washing, peeling.</p>
+                    <div class="section-menu__item">
+                        <div class="section-menu__button section-menu__button--diet">
+                            <h4 class="section-menu__label">Diet Meals</h4>
+                        </div>
+                        <!--<div class="section-menu__inside-text">-->
+                            <p class="section-menu__text">Indulge in the very best burgers of barbecue food. Good Food's favourite healthy burgers. The top dog of the barbecue has been given the ultimate makeover, so you can be sure these burgers will do you good. From brilliant beany burgers to fabulous fish patties, these burgers are bursting with delicious seasonal flavours. If you're looking for a lighter option that still packs a punch, check out our healthy burgers. </p>
+                        <!--</div>-->
                     </div>
                 </section>
 
@@ -336,8 +358,6 @@
 </section>
 <section class="section section-map">
     <div id="map" class="map"></div>
-        <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
-        <script src="main.js" type="text/javascript"></script>
 </section>
 <section class="section-footer">
     <div class="container section-footer__container">
@@ -359,6 +379,26 @@
 
 
 </div>
+
+<div class="owl-carousel">
+    <div class="owl-carousel__item"> Your Content </div>
+    <div class="owl-carousel__item"> Your Content </div>
+    <div class="owl-carousel__item"> Your Content </div>
+    <div class="owl-carousel__item"> Your Content </div>
+    <div class="owl-carousel__item"> Your Content </div>
+    <div class="owl-carousel__item"> Your Content </div>
+    <div class="owl-carousel__item"> Your Content </div>
+</div>
+
+
+<!--Lib-->
+<script src="libs/jquery.min.js"></script>
+<script src="libs/owl.carousel.min.js"></script>
+
+<!--My scripts-->
+<script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
+<script src="main.js" type="text/javascript"></script>
+
 </body>
 </html>
 

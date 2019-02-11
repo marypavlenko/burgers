@@ -3,6 +3,12 @@ html, body {
     padding: 0;
 }
 
+/**/
+
+
+
+/*Fronts*/
+
 @font-face{
     font-family: "Gagalin";
     src: url("fonts/Gagalin/Gagalin-Regular.otf");
@@ -363,7 +369,6 @@ html, body {
 
 .section-team__container {
     display: flex;
-    height: 100%;
     justify-content: flex-end;
 }
 
@@ -372,7 +377,16 @@ html, body {
     min-height: 100vh;
     min-width: 50%;
     flex-direction: column;
-    background-color: rgba(20, 20, 20, 0.93);
+    background-color: #2f3234;
+    background-color: rgba(47, 50, 52, 0.93);
+}
+
+.section-team__content {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    height: 100%;
+    padding: 115px 100px;
 }
 
 .section-team__title {
@@ -384,15 +398,34 @@ html, body {
     text-transform: uppercase;
 }
 
-.section-team__content {
-    margin: 60px 100px;
-    height: 100%;
-}
-
 .section-team__accordion-block {
     display: flex;
     flex-direction: column;
     margin: 15px auto;
+}
+
+.section-team__button {
+    background-color: transparent;
+    border: 0;
+}
+
+.section-team__button.active + .section-team__inside-block {
+    display: flex;
+    margin: 20px;
+}
+
+.section-team__button {
+    display: flex;
+}
+
+.section-team__icon-arrow {
+    margin: 0;
+    width: 9px;
+    height: 7px;
+    background-color: transparent;
+    background-image: url(image/icons/arrow-down.svg);
+    background-repeat: no-repeat;
+    border: 0;
 }
 
 .section-team__label {
@@ -408,26 +441,6 @@ html, body {
     display: none;
 }
 
-.section-team__button.active + .section-team__inside-block {
-    display: flex;
-}
-
-.section-team__button {
-    display: flex;
-}
-
-.section-team__title-job {
-     font-family: UbuntuM, serif;
-     font-size: 14px;
-     color: #ffffff;
- }
-
-.section-team__text {
-    font-family: UbuntuM, serif;
-    font-size: 14px;
-    color: #ffffff;
-}
-
 .section-team__image {
     width: 100px;
     height: 100px;
@@ -436,39 +449,33 @@ html, body {
 .section-team__inside-block--text {
     display: flex;
     flex-direction: column;
-    margin: 0 15px;
+    margin: 0px 15px;
     margin-right: 50%;
 }
 
-
-.section-team__button {
-    background-color: transparent;
-    border: 0;
+.section-team__title-job {
+    font-family: UbuntuM, serif;
+    font-size: 14px;
+    color: #ffffff;
 }
 
-.section-team__icon-arrow {
+.section-team__text {
     margin: 0;
-    width: 9px;
-    height: 7px;
-    background-color: transparent;
-    background-image: url(image/icons/arrow-down.svg);
-    background-repeat: no-repeat;
-    border: 0;
+    width: 300px;
+
+    font-family: UbuntuM, serif;
+    font-size: 14px;
+    color: #ffffff;
 }
 
 
 /*Menu block*/
-
-.section-menu__wrapper {
-    width: 100%;
-    height: 100vh;
-}
-
 .section-menu {
     background-image: url(image/bg/bg-menu.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
+    position: relative;
 }
 
 .section-menu__container {
@@ -478,76 +485,92 @@ html, body {
     justify-content: space-between;
 }
 
+.section-menu__wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
 .section-menu__title {
     margin-left: 10%;
     color: white;
 }
 
-.section-menu__accordion{
+.section-menu__accordion {
     display: flex;
-    flex-direction: column;
     min-height: 100%;
-    width: 100vh;
+
     margin: 0;
     justify-content: flex-end;
-    transform: rotate(-90deg);
-    transform-origin: 62% 30%;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.section-menu__item {
+    display: flex;
+}
+
+.section-menu__button {
+    position: relative;
+    height: 100%;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 0;
+}
+
+
+.section-menu__button.active + .section-menu__text {
+    display: block;
+    width: 630px;
+    margin: 0;
+    padding: 60px 35px;
+
+    color: white;
+    font-family: UbuntuM, serif;
+    font-size: 18px;
+    line-height: 45px;
+
+    background-color: rgba(47, 50, 52, 0.93);
+}
+
+.section-menu__button--meat {
+    background-image: url(image/burgers-slider/layer-meat.png);
+}
+
+.section-menu__button--vegan {
+    background-image: url(image/burgers-slider/layer-vegan.png);
+}
+
+.section-menu__button--diet {
+    background-image: url(image/burgers-slider/layer-diet.png);
 }
 
 .section-menu__label {
+    transform-origin: 0 0;
+    bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+
+    position: absolute;
     font-family: Gagalin, serif;
     text-decoration: none;
     font-size: 40px;
     color: white;
     text-transform: uppercase;
-}
-
-.section-menu__button.active + .section-menu__text {
-    margin: 0;
-    display: block;
-    width: 540px;
-    height: 650px;
-    background-color: rgba(20, 20, 20, 0.7);
-    transform: rotate(90deg);
-
-    color: #ffffff;
-    font-family: UbuntuM, serif;
-    font-size: 14px;
-    line-height: 24px;
+    transform: rotate(-90deg);
+    white-space: nowrap;
 }
 
 .section-menu__text {
     display: none;
 }
 
-.section-menu__button {
-    margin-left: 3%;
-}
 
-.section-menu__accordion--meat {
-    background-image: url(image/burgers-slider/layer-meat.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border: 0;
-
-}
-
-.section-menu__accordion--vegan {
-    background-image: url(image/burgers-slider/layer-vegan.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border: 0;
-}
-
-.section-menu__accordion--diet {
-    background-image: url(image/burgers-slider/layer-diet.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border: 0;
-}
 
 
 /*Reviews block*/
@@ -839,12 +862,18 @@ html, body {
 
 /*Map block*/
 
+.section-map {
+    height: 100vh;
+}
+
 #map {
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
 }
+
+
 
 
 /*Footer*/
@@ -927,6 +956,19 @@ html, body {
     background-repeat: no-repeat;
 }
 
+
+.owl-carousel {
+    width: 100%;
+}
+
+.owl-carousel__item {
+    height: 300px;
+    background-color: aqua;
+}
+
+.owl-stage {
+    display: flex;
+}
 
 /*MediaQueries*/
 

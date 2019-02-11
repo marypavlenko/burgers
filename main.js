@@ -96,6 +96,11 @@ openAccordeon('section-menu__button');
 
 
 
+// Slider
+
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+});
 
 
 
