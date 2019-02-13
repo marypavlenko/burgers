@@ -279,11 +279,11 @@ html, body {
 .section-dark__icon-block {
     margin: 100px 0 30px 100px;
     display: flex;
+    height: 90px;
+    width: 90px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
-    width: 90px;
 
     background-color: rgba(227, 80, 40, 0.4);
     border-radius: 5px;
@@ -319,7 +319,6 @@ html, body {
 .section-dark__carousel-item {
     display: flex;
     margin: 5% 5%;
-    width: 100%;
 }
 
 .owl-stage {
@@ -335,9 +334,10 @@ html, body {
 }
 
 .owl-next {
-    margin-left: 20%;
+    margin-left: 17%;
     width: 15px;
     height: 29px;
+
     background-image: url(image/icons/arrow-right.svg);
     background-repeat: no-repeat;
     background-color: transparent;
@@ -601,8 +601,6 @@ span {
 .section-menu__text {
     display: none;
 }
-
-
 
 
 /*Reviews block*/
@@ -1077,6 +1075,12 @@ span {
         margin-top: 0;
     }
 
+    /*Menu block*/
+
+    .section-menu__button.active + .section-menu__text {
+        width: 400px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -1189,7 +1193,13 @@ span {
         margin-left: 5%;
     }
 
+    /*Menu block*/
 
+    .section-menu__button.active + .section-menu__text {
+        width: 350px;
+        font-size: 16px;
+        line-height: 40px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -1220,7 +1230,13 @@ span {
         font-size: 50px;
     }
 
-    /*Reviews block*/
+    /*Menu block*/
+
+    .section-menu__button.active + .section-menu__text {
+        width: 300px;
+        font-size: 14px;
+        line-height: 35px;
+    }
 }
 
 @media (max-width: 480px) {
