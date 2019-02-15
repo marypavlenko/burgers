@@ -72,34 +72,43 @@ function init() {
 }
 
 // Аккордеон
-function openAccordeon (btn) {
-    var activeBtn;
+function openAccordeon (btn, activeClass) {
     var button = document.getElementsByClassName(btn);
-    activeBtn = 'active';
+    console.log(button.parentElement);
 
     for (var i = 0; i < button.length; i++) {
         button[i].addEventListener('click', function () {
-            if (!(this.classList.contains(activeBtn))) {
+            if (!(this.classList.contains(activeClass))) {
                 for (var j = 0; j < button.length; j++) {
-                    button[j].classList.remove(activeBtn);
-                    this.classList.add(activeBtn)
+                    button[j].classList.remove(activeClass);
+                    this.classList.add(activeClass)
                 }
             } else {
-                this.classList.remove(activeBtn);
+                this.classList.remove(activeClass);
             }
         })
     }
 }
 
-openAccordeon('section-team__button');
-openAccordeon('section-menu__button');
+openAccordeon('section-team__button', 'section-team__button--active');
+openAccordeon('section-menu__button', 'section-menu__button--active');
+
 
 
 
 // Slider
 
 $(document).ready(function(){
-    $(".section-dark__сarousel").owlCarousel();
+    $(".section-dark__сarousel").owlCarousel({
+        loop:false,
+        margin:10,
+        nav:false,
+        responsive: {
+            0: {
+                items: 1
+            }
+        }
+    });
 });
 
 
