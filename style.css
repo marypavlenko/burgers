@@ -54,7 +54,8 @@ html, body {
     height: 100%;
     max-width: 1100px;
     width: 100%;
-    margin: 0 185px;
+    margin: 0 85px;
+    align-items: center;
 }
 
 .section {
@@ -412,7 +413,8 @@ span {
 .section-team__block {
     display: flex;
     min-height: 100vh;
-    min-width: 50%;
+    max-width: 50%;
+    width: 1100px;
     flex-direction: column;
     background-color: #2f3234;
     background-color: rgba(47, 50, 52, 0.93);
@@ -423,20 +425,25 @@ span {
     flex-direction: column;
     margin: 20px;
     height: 100%;
-    padding: 115px 100px;
 }
 
 .section-team__title {
     display: flex;
-
+    margin: 50px 0 0 100px;
     text-decoration: none;
     font-size: 72px;
     color: #f9b43b;
     text-transform: uppercase;
 }
 
+.section-team__accordion {
+    height: 100%;
+    margin: 50px 0 0 100px;
+}
+
 .section-team__accordion-block {
     display: flex;
+
     flex-direction: column;
     margin: 15px auto;
 }
@@ -456,7 +463,7 @@ span {
 }
 
 .section-team__icon-arrow {
-    margin: 0;
+    margin: 5px 0 0 0;
     width: 9px;
     height: 7px;
     background-color: transparent;
@@ -466,8 +473,9 @@ span {
 }
 
 .section-team__label {
-    margin: 0;
+    margin: 0 0 0 10px;
     width: 130px;
+    text-align: left;
     font-family: Gagalin, serif;
     font-size: 14px;
     color: #ffffff;
@@ -924,6 +932,7 @@ span {
 
 .section-footer__container {
     display: flex;
+    padding: 10px;
     min-height: 100vh;
     flex-direction: row;
     justify-content: space-between;
@@ -945,7 +954,7 @@ span {
 }
 
 .section-footer__icon--number {
-    margin-right: 5%;
+    margin-right: 5px;
     width: 12px;
     height: 11px;
     background-image: url(image/icons/phone.svg);
@@ -1002,7 +1011,8 @@ span {
 @media (max-width: 1060px) {
 
     .container {
-        max-width: 1060px;
+        margin: 0;
+        padding: 3%;
     }
 
     /*Promo block*/
@@ -1063,13 +1073,19 @@ span {
     }
 
     /*Best block*/
-    .section-best__container {
-        padding: 0 50px;
+    .section-best__wrapper {
+        width: 95%;
     }
 
-    .section-best__item-title {
-        font-size: 20px;
-        line-height: 25px;
+    /*Team block*/
+    .section-team__text {
+        width: 200px;
+    }
+
+    /*Menu block*/
+
+    .section-menu__button.active + .section-menu__text {
+        width: 400px;
     }
 
     /*Form block*/
@@ -1081,19 +1097,11 @@ span {
     .section-form__column-submit {
         margin-top: 0;
     }
-
-    /*Menu block*/
-
-    .section-menu__button.active + .section-menu__text {
-        width: 400px;
-    }
-
 }
 
 @media (max-width: 768px) {
 
     .container {
-        max-width: 768px;
     }
 
     /*Promo block*/
@@ -1103,6 +1111,10 @@ span {
 
     .section-promo__text {
         font-size: 50px;
+    }
+
+    .section-promo__content-img {
+        margin: 0;
     }
 
     /*Best block*/
@@ -1118,8 +1130,13 @@ span {
         flex-direction: row;
     }
 
+    .section-best__block {
+        padding-left: 30%;
+    }
+
     .section-best__icon {
-        margin-right: 30px;
+        position: absolute;
+        margin-left: 5%;
     }
 
     .section-best__item-title {
@@ -1129,6 +1146,7 @@ span {
     }
 
     .section-best__item-text {
+        width: 90%;
         font-size: 14px;
         line-height: 18px;
         text-align: left;
@@ -1161,6 +1179,46 @@ span {
     .section-reviews__button {
         margin-left: 40%;
         margin-top: 5%;
+    }
+
+    /*Team block*/
+    .section-team__block {
+        min-height: 100vh;
+        max-width: 100%;
+        width: 768px;
+    }
+
+    .section-team__content {
+        margin: 50px;
+    }
+
+    .section-team__label {
+        width: 280px;
+        font-size: 24px;
+    }
+
+    .section-team__text {
+        width: 330px;
+        text-align: center;
+    }
+
+    .section-team__inside-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-team__inside-block--text {
+        margin: 0;
+        align-items: center;
+    }
+
+
+    /*Menu block*/
+
+    .section-menu__button.active + .section-menu__text {
+        width: 350px;
+        font-size: 16px;
+        line-height: 40px;
     }
 
     /*Form block*/
@@ -1199,20 +1257,11 @@ span {
     .section-footer__container {
         margin-left: 5%;
     }
-
-    /*Menu block*/
-
-    .section-menu__button.active + .section-menu__text {
-        width: 350px;
-        font-size: 16px;
-        line-height: 40px;
-    }
 }
 
 @media (max-width: 550px) {
 
     .container {
-        max-width: 550px;
     }
 
     /*Promo block*/
@@ -1237,6 +1286,22 @@ span {
         font-size: 50px;
     }
 
+    /*Team block*/
+    .section-team__title {
+        margin: 10% 0 0 10%;
+    }
+
+    .section-team__accordion {
+        margin: 10% 0 0 10%;
+    }
+
+    .section-team__text {
+        width: 250px;
+        text-align: center;
+    }
+
+
+
     /*Menu block*/
 
     .section-menu__button--active + .section-menu__text {
@@ -1257,13 +1322,11 @@ span {
     }
 
 
-
 }
 
 @media (max-width: 480px) {
     .container {
-        max-width: 480px;
-        padding: 0 5px;
+        padding: 0 10px;
     }
 
     /*Promo block*/
@@ -1302,19 +1365,12 @@ span {
         line-height: 18px;
     }
 
-    .section-best__item {
-        margin: 5px 0;
-    }
 
-    .section-best__item--natural {
-        margin-bottom: 10%;
-    }
+
     /*Form block*/
     .section-form__container {
         padding: 0 30px;
     }
-
-
 
     .section-form__title {
     font-size: 50px;
@@ -1354,9 +1410,6 @@ span {
     .input-comment {
         width: 360px;
     }
-
-
-    /*Form block*/
 
     .section-form {
         height: 100%;
