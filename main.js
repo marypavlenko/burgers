@@ -112,7 +112,29 @@ $(document).ready(function(){
 });
 
 
+// Mobile menu
 
+function toggleMenu() {
+    var openBtn = $('.nav__menu-burger');
+    var closeBtn = $('.nav-mobile__close-btn');
+    var menu = $('.nav-mobile');
+
+    openBtn.on('click', function (event) {
+        event.preventDefault();
+        menu.fadeIn();
+        $('body').addClass('scroll-hidden');
+    });
+
+    closeBtn.on('click', function (event) {
+        event.preventDefault();
+        menu.fadeOut();
+        $('body').removeClass('scroll-hidden');
+    });
+
+
+}
+
+toggleMenu();
 
 
 

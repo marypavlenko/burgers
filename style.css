@@ -3,6 +3,10 @@ html, body {
     padding: 0;
 }
 
+.scroll-hidden {
+    overflow: hidden;
+}
+
 /**/
 
 
@@ -52,9 +56,9 @@ html, body {
 .container {
     min-height: 650px;
     height: 100%;
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 85px;
+    max-width: calc(1100px - 170px);
+    width: calc(100% - 170px);
+    padding: 0 85px;
     align-items: center;
 }
 
@@ -109,6 +113,7 @@ html, body {
     font-weight: bold;
 }
 
+.nav-mobile,
 .nav__menu-burger {
     display: none;
 }
@@ -188,7 +193,6 @@ html, body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -210,9 +214,16 @@ html, body {
 
 .section-best__item {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
+    margin-right: 40px;
 }
+
+.section-best__item:last-of-type {
+    margin-right: 0;
+}
+
 .section-best__icon {
     background-size: cover;
     background-repeat: no-repeat;
@@ -222,21 +233,18 @@ html, body {
 .section-best__icon--meat {
     width: 97px;
     height: 89px;
-    min-width: 97px;
     background-image: url(image/icons/meat.svg);
 }
 
 .section-best__icon--hands {
     width: 73px;
     height: 85px;
-    min-width: 73px;
     background-image: url(image/icons/hand.svg);
 }
 
 .section-best__icon--natural {
     width: 88px;
     height: 75px;
-    min-width: 88px;
     background-image: url(image/icons/natural.svg);
 }
 
@@ -258,17 +266,11 @@ html, body {
     line-height: 25px;
 }
 
-.section-best__item:not(odd) {
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
 /*Dark block*/
 
 .section-dark {
-    background-image: url(image/bg/bg-dark.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #f9b43b;
+    background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
 }
 
 .section-dark__container {
@@ -750,6 +752,7 @@ span {
 
 .section-form__title-text {
     margin: 0;
+    text-align: center;
 }
 
 .input {
@@ -1010,18 +1013,28 @@ span {
 @media (max-width: 1060px) {
 
     .container {
-        margin: 0;
-        padding: 3%;
+        width: calc(100% - 100px);
+        padding: 0 50px;
     }
 
     /*Promo block*/
     .section-promo__container {
-        padding: 0 50px;
+        /*padding: 0 50px;*/
     }
 
     .header {
         width: 100%;
         justify-content: space-between;
+    }
+
+    .nav-mobile {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #2f3234;
     }
 
     .nav__list {
@@ -1042,6 +1055,7 @@ span {
         margin: 0 20px;
         width: 24px;
         height: 22px;
+        border: 0;
         background-image: url(image/icons/burger-menu.svg);
         background-color: transparent;
         background-repeat: no-repeat;
@@ -1072,9 +1086,6 @@ span {
     }
 
     /*Best block*/
-    .section-best__wrapper {
-        width: 95%;
-    }
 
     /*Team block*/
     .section-team__text {
@@ -1100,9 +1111,6 @@ span {
 
 @media (max-width: 768px) {
 
-    .container {
-    }
-
     /*Promo block*/
     .section-promo__title {
         font-size: 65px;
@@ -1127,6 +1135,7 @@ span {
 
     .section-best__item {
         flex-direction: row;
+        margin: 0;
     }
 
     .section-best__block {
@@ -1135,7 +1144,6 @@ span {
 
     .section-best__icon {
         position: absolute;
-        margin-left: 5%;
     }
 
     .section-best__item-title {
@@ -1145,7 +1153,6 @@ span {
     }
 
     .section-best__item-text {
-        width: 90%;
         font-size: 14px;
         line-height: 18px;
         text-align: left;
@@ -1326,6 +1333,7 @@ span {
 @media (max-width: 480px) {
     .container {
         padding: 0 10px;
+        width: calc(100% - 20px);
     }
 
     /*Promo block*/
@@ -1338,6 +1346,23 @@ span {
 
     .promo__img-burger {
         width: 300px;
+    }
+
+    .section-best__icon--meat {
+        width: 65px;
+        height: 59px;
+    }
+
+    .section-best__icon--hands {
+        width: 49px;
+        height: 57px;
+        left: 10px
+    }
+
+    .section-best__icon--natural {
+        width: 59px;
+        height: 50px;
+        left: 10px
     }
 
     .section-promo__title {
