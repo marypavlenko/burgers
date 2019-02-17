@@ -59,6 +59,7 @@ html, body {
     max-width: calc(1100px - 170px);
     width: calc(100% - 170px);
     padding: 0 85px;
+    margin: 0 auto;
     align-items: center;
 }
 
@@ -1035,6 +1036,42 @@ span {
         left: 0;
         bottom: 0;
         background-color: #2f3234;
+    }
+
+    .logo {
+        display: flex;
+        z-index: 1;
+    }
+
+    .nav-mobile__close-btn {
+        position: absolute;
+        right: inherit;
+        width: 18px;
+        height: 18px;
+        margin: 35px 60px;
+        background-image: url(image/icons/close.svg);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+    }
+
+    .nav-mobile__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        margin-top: 130px;
+        line-height: 60px;
+    }
+
+    .nav-mobile__link {
+        display: block;
+        text-decoration: none;
+        font-family: UbuntuM, serif;
+        font-size: 24px;
+        color: white;
+        text-transform: uppercase;
+        white-space: nowrap;
     }
 
     .nav__list {
