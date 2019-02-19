@@ -1,5 +1,5 @@
 
-
+// Map
 ymaps.ready(init);
 
 var map,
@@ -71,7 +71,7 @@ function init() {
     });
 }
 
-// Аккордеон
+// Accordeon
 function openAccordeon (btn, activeClass) {
     var button = document.getElementsByClassName(btn);
     console.log(button.parentElement);
@@ -92,8 +92,6 @@ function openAccordeon (btn, activeClass) {
 
 openAccordeon('section-team__button', 'section-team__button--active');
 openAccordeon('section-menu__button', 'section-menu__button--active');
-
-
 
 
 // Slider
@@ -130,13 +128,35 @@ function toggleMenu() {
         menu.fadeOut();
         $('body').removeClass('scroll-hidden');
     });
-
-
 }
 
 toggleMenu();
 
 
+
+// Popup
+
+function popupSection () {
+    var openBtn = $('.section-reviews__button');
+    var closeBtn = $('.section-reviews__close-btn');
+    var popup = $('.section-reviews__popup');
+
+    openBtn.on('click', function (event) {
+        event.preventDefault();
+        popup.fadeIn();
+        $('body').addClass('scroll-hidden');
+    });
+
+    closeBtn.on('click', function (event) {
+        event.preventDefault();
+        popup.fadeOut();
+        $('body').removeClass('scroll-hidden');
+    });
+
+
+}
+
+popupSection();
 
 
 

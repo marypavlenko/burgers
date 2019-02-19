@@ -1170,8 +1170,9 @@ span {
 
     /*Menu block*/
 
-    .section-menu__button.active + .section-menu__text {
+    .section-menu__button--active + .section-menu__text {
         width: 400px;
+        line-height: 35px;
     }
 
     /*Form block*/
@@ -1296,11 +1297,10 @@ span {
 
 
     /*Menu block*/
-
-    .section-menu__button.active + .section-menu__text {
-        width: 350px;
+    .section-menu__button--active + .section-menu__text {
+        width: 300px;
         font-size: 16px;
-        line-height: 40px;
+        line-height: 30px;
     }
 
     /*Form block*/
@@ -1382,8 +1382,6 @@ span {
         text-align: center;
     }
 
-
-
     /*Menu block*/
 
     .section-menu__button--active + .section-menu__text {
@@ -1393,17 +1391,15 @@ span {
     }
 
     .section-menu__item {
-        z-index: 2;
-        right: -160px;
-        width: 100vw;
+        /*z-index: 2;*/
+        /*right: -160px;*/
+        /*width: 100vw;*/
         position: relative;
     }
 
     .section-menu__button {
         min-width: 80px;
     }
-
-
 }
 
 @media (max-width: 480px) {
@@ -1466,6 +1462,24 @@ span {
     }
 
 
+    /*Menu block*/
+
+    /*.section-menu__button--active + .section-menu__text {*/
+        /*width: initial;*/
+        /*font-size: 14px;*/
+        /*line-height: 35px;*/
+    /*}*/
+
+    /*.section-menu__item {*/
+        /*!*z-index: 2;*!*/
+        /*!*right: -160px;*!*/
+        /*!*width: 100vw;*!*/
+        /*position: relative;*/
+    /*}*/
+
+    /*.section-menu__button {*/
+        /*min-width: 80px;*/
+    /*}*/
 
     /*Form block*/
     .section-form__container {
