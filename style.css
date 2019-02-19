@@ -753,6 +753,7 @@ span {
 
 .section-work__title {
     text-align: center;
+    margin: 0;
 }
 
 
@@ -1235,35 +1236,6 @@ span {
         text-align: left;
     }
 
-    /*Reviews block*/
-    .section-reviews__content {
-        flex-basis: 50%;
-        height: 25%;
-    }
-
-    .section-reviews__block {
-        height: calc(100% - 10px);
-        width:calc(100% - 70px);
-        padding: 5px 35px;
-    }
-
-    .section-reviews__title {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .section-reviews__text {
-        margin-bottom: 0px;
-        font-size: 14px;
-        line-height: 16px;
-        text-align: center;
-    }
-
-    .section-reviews__button {
-        margin-left: 40%;
-        margin-top: 5%;
-    }
-
     /*Team block*/
     .section-team__block {
         min-height: 100vh;
@@ -1303,8 +1275,42 @@ span {
         line-height: 30px;
     }
 
-    /*Form block*/
+    /*Reviews block*/
+    .section-reviews__content {
+        flex-basis: 50%;
+        height: 25%;
+    }
 
+    .section-reviews__block {
+        height: calc(100% - 10px);
+        width:calc(100% - 70px);
+        padding: 5px 35px;
+    }
+
+    .section-reviews__title {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .section-reviews__text {
+        margin-bottom: 0px;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    .section-reviews__button {
+        margin-left: 40%;
+        margin-top: 5%;
+    }
+
+    /*Work block*/
+    .section-work__title {
+        white-space: normal;
+    }
+
+
+    /*Form block*/
     .section-form__form {
         flex-direction: column;
     }
@@ -1342,10 +1348,6 @@ span {
 }
 
 @media (max-width: 550px) {
-
-    .container {
-    }
-
     /*Promo block*/
     .section-promo__container {
         padding: 0 30px;
@@ -1399,6 +1401,21 @@ span {
 
     .section-menu__button {
         min-width: 80px;
+    }
+
+    /*Reviews block*/
+    .section-reviews__block {
+        height: calc(100% - 100px);
+        width: calc(100% - 70px);
+        padding: 50px 35px;
+    }
+
+    .section-reviews__title {
+        font-size: 24px;
+    }
+
+    .section-reviews__text {
+        display: none;
     }
 }
 
@@ -1463,73 +1480,67 @@ span {
 
 
     /*Menu block*/
-
-    /*.section-menu__button--active + .section-menu__text {*/
-        /*width: initial;*/
-        /*font-size: 14px;*/
-        /*line-height: 35px;*/
-    /*}*/
-
-    /*.section-menu__item {*/
-        /*!*z-index: 2;*!*/
-        /*!*right: -160px;*!*/
-        /*!*width: 100vw;*!*/
-        /*position: relative;*/
-    /*}*/
-
-    /*.section-menu__button {*/
-        /*min-width: 80px;*/
-    /*}*/
-
-    /*Form block*/
-    .section-form__container {
-        padding: 0 30px;
+    .section-menu__button--active .section-menu__item {
+        /*z-index: 2;*/
+        /*right: -160px;*/
+        /*width: 100vw;*/
     }
 
+
+
+    /*Form block*/
     .section-form__title {
-    font-size: 50px;
-    text-align: center;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .section-form__form-wrapper {
+        margin: auto 15px;
     }
 
     .section-form__form {
-        flex-direction: column;
-        margin-left: 25%;
+        width: 100vw;
     }
 
     .input {
-        width: 77px;
+        width: 200px;
     }
 
-    .section-form__form--input {
-        max-width: 100%;
-        margin-right: 0;
+    .section-form__input-street {
+        width: 415px;
     }
 
-    .input-name {
-        width: 170px;
+    .section-form__input-house {
+        width: 88px;
     }
 
-    .grid--name-content {
-        margin: 10px 13px 10px 0;
+    .section-form__input-comment {
+        width: 415px;
+        height: 50px;
     }
 
-    .input-street {
-        width: 360px;
+    .section-form__name-phone {
+        margin-bottom: 10px;
+        margin-top: 0;
     }
 
-    .grid--house-content {
-        margin: 10px 5px;
+    .section-form__house {
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 
-    .input-comment {
-        width: 360px;
+    .section-form__radio {
+        justify-content: center;
     }
 
-    .section-form {
-        height: 100%;
-        min-height: 480px;
+    .section-form__checkbox {
+        justify-content: center;
     }
 
+    .section-form__buttons {
+        display: flex;
+        justify-content: center;
+    }
 
     /*Footer*/
 
@@ -1545,6 +1556,31 @@ span {
 
     .section-footer__text {
         margin: 5px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .container {
+        padding: 0 10px;
+        width: calc(100% - 20px);
+    }
+
+    /*Form block*/
+    .input {
+        width: 130px;
+    }
+
+    .section-form__input-street {
+        width: 280px;
+    }
+
+    .section-form__input-house {
+        width: 55px;
+    }
+
+    .section-form__input-comment {
+        width: 280px;
     }
 
 }
