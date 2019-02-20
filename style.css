@@ -169,7 +169,7 @@ html, body {
     font-family: Lifehack, serif;
     color: white;
     font-size: 70px;
-    line-height: 60px;
+    line-height: 80px;
 }
 
 .section-promo__scroll {
@@ -585,7 +585,11 @@ span {
       background-color: rgba(47, 50, 52, 0.93);
   }
 
-/*в функцию передать доп параметр и в качестве аргумента передовать класс с модификатором active*/
+.section-menu__item--active {
+    width: 100vw;
+    right: -160px;
+    z-index: 2;
+}
 
 .section-menu__button--meat {
     background-image: url(image/burgers-slider/layer-meat.png);
@@ -682,6 +686,13 @@ span {
     line-height: 20px;
 }
 
+.section-reviews__popup-text {
+    margin-bottom: 30px;
+    font-family: UbuntuM, serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .section-reviews__button {
     margin-top: 15px;
     padding: 15px;
@@ -754,6 +765,11 @@ span {
 .section-work__title {
     text-align: center;
     margin: 0;
+}
+
+.section-work__video {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -1185,6 +1201,23 @@ span {
     .section-form__column-submit {
         margin-top: 0;
     }
+
+    .section-form__title {
+        margin: 20px auto;
+    }
+
+    .section-form__radio {
+        justify-content: center;
+    }
+
+    .section-form__checkbox {
+        justify-content: center;
+    }
+
+    .section-form__buttons {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1282,27 +1315,28 @@ span {
     }
 
     .section-reviews__block {
-        height: calc(100% - 10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: calc(100% - 80px);
         width:calc(100% - 70px);
-        padding: 5px 35px;
-    }
-
-    .section-reviews__title {
-        font-size: 14px;
-        text-align: center;
+        padding: 40px 35px;
     }
 
     .section-reviews__text {
-        margin-bottom: 0px;
-        font-size: 14px;
-        line-height: 16px;
-        text-align: center;
+        display: none;
+    }
+
+    .section-reviews__title {
+        font-size: 24px;
+        text-align: initial;
     }
 
     .section-reviews__button {
-        margin-left: 40%;
-        margin-top: 5%;
+       margin-top: 0;
     }
+
 
     /*Work block*/
     .section-work__title {
@@ -1313,6 +1347,10 @@ span {
     /*Form block*/
     .section-form__form {
         flex-direction: column;
+    }
+
+    .section-form__title-text {
+        font-size: 60px;
     }
 
     .grid--name-content {
@@ -1417,6 +1455,13 @@ span {
     .section-reviews__text {
         display: none;
     }
+
+    /*Form block*/
+    .section-form__name-phone,
+    .section-form__house {
+        margin: 10px 0;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -1527,19 +1572,6 @@ span {
     .section-form__house {
         margin-bottom: 10px;
         margin-top: 10px;
-    }
-
-    .section-form__radio {
-        justify-content: center;
-    }
-
-    .section-form__checkbox {
-        justify-content: center;
-    }
-
-    .section-form__buttons {
-        display: flex;
-        justify-content: center;
     }
 
     /*Footer*/

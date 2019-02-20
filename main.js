@@ -133,6 +133,27 @@ function toggleMenu() {
 toggleMenu();
 
 
+// Menu items
+// function openItem (button, activeClass) {
+//     var button = document.getElementsByClassName(section-menu__button);
+//
+//     for (var i = 0; i < button.length; i++) {
+//         button[i].addEventListener('click', function () {
+//             if (!(this.classList.contains(activeClass))) {
+//                 for (var j = 0; j < button.length; j++) {
+//                     button[j].classList.remove(activeClass);
+//                     this.classList.add(activeClass)
+//                 }
+//             } else {
+//                 this.classList.remove(activeClass);
+//             }
+//         })
+//     }
+// }
+//
+// openItem('section-menu__button', 'section-menu__item--active');
+//
+
 
 // Popup
 
