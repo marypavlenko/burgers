@@ -283,11 +283,6 @@ html, body {
 .section-dark__block {
     display: flex;
     flex-direction: column;
-
-    max-height: 650px;
-    height: 100%;
-    max-width: 1100px;
-    width: 100%;
 }
 
 .section-dark__icon-block {
@@ -328,6 +323,10 @@ html, body {
 .section-dark__сarousel {
     overflow: hidden;
     position: relative;
+
+    max-height: 500px;
+    height: 100%;
+    max-width: 1100px;
     width: 100%;
 }
 
@@ -584,12 +583,6 @@ span {
 
       background-color: rgba(47, 50, 52, 0.93);
   }
-
-.section-menu__item--active {
-    width: 100vw;
-    right: -160px;
-    z-index: 2;
-}
 
 .section-menu__button--meat {
     background-image: url(image/burgers-slider/layer-meat.png);
@@ -1425,16 +1418,16 @@ span {
     /*Menu block*/
 
     .section-menu__button--active + .section-menu__text {
-        width: initial;
+        width: 100%;
         font-size: 14px;
         line-height: 35px;
     }
 
-    .section-menu__item {
-        /*z-index: 2;*/
-        /*right: -160px;*/
-        /*width: 100vw;*/
+    .section-menu__item--active {
         position: relative;
+        z-index: 2;
+        right: -160px;
+        width: 100vw;
     }
 
     .section-menu__button {

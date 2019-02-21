@@ -91,23 +91,62 @@ function openAccordeon (btn, activeClass) {
 }
 
 openAccordeon('section-team__button', 'section-team__button--active');
-openAccordeon('section-menu__button', 'section-menu__button--active');
+
+
+
+//Menu items
+function openItem (btn, activeClass) {
+    var button = document.getElementsByClassName(btn);
+    var parentAll = document.querySelectorAll('.section-menu__item');
+    
+    for (var i = 0; i < button.length; i++) {
+        button[i].addEventListener('click', function () {
+            var parentBtn = this.closest('.section-menu__item');
+            console.log(parentBtn);
+
+            for (var t = 0; t < parentAll.length; t++) {
+                if (parentAll[t].classList.contains('section-menu__item--active')) {
+                    parentAll[t].classList.remove('section-menu__item--active');
+                }
+            }
+
+            if (!(this.classList.contains(activeClass))) {
+                for (var j = 0; j < button.length; j++) {
+                    button[j].classList.remove(activeClass);
+                    this.classList.add(activeClass);
+                    parentBtn.classList.add('section-menu__item--active');
+                }
+            } else {
+                this.classList.remove(activeClass);
+                parentBtn.classList.remove('section-menu__item--active');
+            }
+        })
+    }
+}
+
+openItem('section-menu__button', 'section-menu__button--active');
+
 
 
 // Slider
 
 $(document).ready(function(){
-    $(".section-dark__сarousel").owlCarousel({
-        loop:false,
-        margin:10,
-        nav:false,
-        responsive: {
-            0: {
-                items: 1
-            }
-        }
-    });
+    $('.bxslider').section-dark__сarousel();
 });
+
+
+// $(document).ready(function(){
+//     $(".section-dark__сarousel").owlCarousel({
+//         loop:false,
+//         margin:10,
+//         nav:false,
+//         responsive: {
+//             0: {
+//                 items: 1
+//             }
+//         }
+//     });
+// });
 
 
 // Mobile menu
@@ -131,28 +170,6 @@ function toggleMenu() {
 }
 
 toggleMenu();
-
-
-// Menu items
-// function openItem (button, activeClass) {
-//     var button = document.getElementsByClassName(section-menu__button);
-//
-//     for (var i = 0; i < button.length; i++) {
-//         button[i].addEventListener('click', function () {
-//             if (!(this.classList.contains(activeClass))) {
-//                 for (var j = 0; j < button.length; j++) {
-//                     button[j].classList.remove(activeClass);
-//                     this.classList.add(activeClass)
-//                 }
-//             } else {
-//                 this.classList.remove(activeClass);
-//             }
-//         })
-//     }
-// }
-//
-// openItem('section-menu__button', 'section-menu__item--active');
-//
 
 
 // Popup
