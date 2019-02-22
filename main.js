@@ -74,7 +74,6 @@ function init() {
 // Accordeon
 function openAccordeon (btn, activeClass) {
     var button = document.getElementsByClassName(btn);
-    console.log(button.parentElement);
 
     for (var i = 0; i < button.length; i++) {
         button[i].addEventListener('click', function () {
@@ -128,33 +127,15 @@ openItem('section-menu__button', 'section-menu__button--active');
 
 
 
-// Slider
+// // Slider
 
 function sliderDark (){
     $('.section-dark__сarousel').bxSlider({
-        mode: 'fade',
-        captions: true,
-        slideWidth: 600
+        slideWidth: 1100,
     });
 }
 
 sliderDark ();
-
-
-
-
-// $(document).ready(function(){
-//     $(".section-dark__сarousel").owlCarousel({
-//         loop:false,
-//         margin:10,
-//         nav:false,
-//         responsive: {
-//             0: {
-//                 items: 1
-//             }
-//         }
-//     });
-// });
 
 
 // Mobile menu

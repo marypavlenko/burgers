@@ -321,6 +321,8 @@ html, body {
 }
 
 .section-dark__сarousel {
+    display: flex;
+    flex-direction: row;
     overflow: hidden;
     position: relative;
 
@@ -331,32 +333,39 @@ html, body {
 
 .section-dark__carousel-item {
     display: flex;
-    margin: 5% 5%;
+    width: 1100px;
+    height: 600px;
+    margin: 30px 150px;
 }
 
-.owl-stage {
-    display: flex;
-}
 
-.owl-nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-}
 
-.owl-next {
-    width: 15px;
-    height: 29px;
 
-    background-image: url(image/icons/arrow-right.svg);
-    background-repeat: no-repeat;
-    background-color: transparent;
+
+.bx-wrapper {
+    max-width: 1500px;
+    height: 500px;
+    box-shadow: none;
     border: none;
+    background: none;
+
+    -webkit-box-shadow: none;
 }
 
-.owl-prev {
+.bx-viewport {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.bx-pager,
+.bx-default-pager {
+    display: none;
+}
+
+
+.bx-prev {
     width: 15px;
     height: 29px;
     margin-left: 5%;
@@ -367,8 +376,14 @@ html, body {
     border: none;
 }
 
-span {
-    display: none;
+.bx-next {
+    width: 15px;
+    height: 29px;
+
+    background-image: url(image/icons/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
 }
 
 .section-dark__img-burger {
