@@ -130,9 +130,17 @@ openItem('section-menu__button', 'section-menu__button--active');
 
 // Slider
 
-$(document).ready(function(){
-    $('.bxslider').section-dark__сarousel();
-});
+function sliderDark (){
+    $('.section-dark__сarousel').bxSlider({
+        mode: 'fade',
+        captions: true,
+        slideWidth: 600
+    });
+}
+
+sliderDark ();
+
+
 
 
 // $(document).ready(function(){
