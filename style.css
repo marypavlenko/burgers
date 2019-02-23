@@ -693,13 +693,6 @@ html, body {
     line-height: 20px;
 }
 
-.section-reviews__popup-text {
-    margin-bottom: 30px;
-    font-family: UbuntuM, serif;
-    font-size: 16px;
-    line-height: 20px;
-}
-
 .section-reviews__button {
     margin-top: 15px;
     padding: 15px;
@@ -716,11 +709,18 @@ html, body {
     border: none;
 }
 
+
+/*Popup*/
 .section-reviews__popup {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100vw;
     height: 100vh;
     z-index: 1;
@@ -728,10 +728,19 @@ html, body {
 }
 
 .section-reviews__popup-block {
+    display: flex;
     width: 460px;
     height: 254px;
     background-color: #ffffff;
     border-radius: 5px;
+}
+
+
+.section-reviews__popup-text {
+    margin-bottom: 30px;
+    font-family: UbuntuM, serif;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .section-reviews__popup-content {
@@ -770,13 +779,13 @@ html, body {
 }
 
 .section-work__title {
+    margin: 50px 0;
     text-align: center;
-    margin: 0;
 }
 
 .section-work__video {
-    width: 100%;
-    height: 100%;
+    width: 660px;
+    height: 370px;
 }
 
 
@@ -1346,10 +1355,6 @@ html, body {
 
 
     /*Work block*/
-    .section-work__title {
-        white-space: normal;
-    }
-
 
     /*Form block*/
     .section-form__form {
