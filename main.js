@@ -167,6 +167,10 @@ function popupSection () {
     var openBtn = $('.section-reviews__button');
     var closeBtn = $('.section-reviews__close-btn');
     var popup = $('.section-reviews__popup');
+    // var  intElemScrollTop = someElement.scrollTop;
+    //
+    // element.scrollTop = intValue;
+    // scrollTo(0,0);
 
     openBtn.on('click', function (event) {
         event.preventDefault();
@@ -179,8 +183,6 @@ function popupSection () {
         popup.fadeOut();
         $('body').removeClass('scroll-hidden');
     });
-
-
 }
 
 popupSection();
