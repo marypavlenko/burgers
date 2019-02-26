@@ -167,14 +167,22 @@ function popupSection () {
     var openBtn = $('.section-reviews__button');
     var closeBtn = $('.section-reviews__close-btn');
     var popup = $('.section-reviews__popup');
-    // var  intElemScrollTop = someElement.scrollTop;
-    //
-    // element.scrollTop = intValue;
-    // scrollTo(0,0);
+    var  intElemScrollTop = window.scrollY;
+
+    popup.scrollTop(intElemScrollTop);
 
     openBtn.on('click', function (event) {
         event.preventDefault();
+        var targetBtn = $(event.target);
+        var btnParent = targetBtn.parent();
+        var title = btnParent.find('.section-reviews__title').text();
+        var text = btnParent.find('.section-reviews__text').text();
+
+        $('.section-reviews__popup-title').text(title);
+        $('.section-reviews__popup-text').text(text);
+
         popup.fadeIn();
+        popup.css('display', 'flex');
         $('body').addClass('scroll-hidden');
     });
 
