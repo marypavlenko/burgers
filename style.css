@@ -99,6 +99,7 @@ html, body {
 
 .nav__list {
     display: flex;
+    margin: 0;
     list-style: none;
     align-items: center;
 }
@@ -552,6 +553,7 @@ html, body {
 }
 
 
+
 /*Menu block*/
 .section-menu {
     background-image: url(image/bg/bg-menu.png);
@@ -860,6 +862,7 @@ html, body {
 
 .input {
     border-radius: 5px;
+    padding-left: 10px;
     border-color: white;
     background-color: white;
     height: 35px;
@@ -1153,6 +1156,7 @@ html, body {
 
     .nav-mobile__list {
         display: flex;
+        padding-left: 0;
         flex-direction: column;
         align-items: center;
         list-style: none;
@@ -1351,6 +1355,11 @@ html, body {
         margin: 50px;
     }
 
+    .section-team__accordion-block {
+        justify-content: center;
+        align-items: center;
+    }
+
     .section-team__label {
         width: 280px;
         font-size: 24px;
@@ -1371,6 +1380,11 @@ html, body {
         align-items: center;
     }
 
+    .section-team__title {
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
 
     /*Menu block*/
     .section-menu__button--active + .section-menu__text {
@@ -1674,6 +1688,10 @@ html, body {
         font-size: 50px;
     }
 
+    .section-best__title {
+        text-align: center;
+    }
+
     /*Video block*/
     .section-work__video {
         width: 300px;
@@ -1697,5 +1715,22 @@ html, body {
         width: 280px;
     }
 
+    .nav-mobile__close-btn {
+        margin: 35px 20px;
+    }
+
+    .nav-mobile__list {
+        padding: 0;
+    }
+
+    .section-reviews__text {
+        overflow: hidden;
+    }
+
+    .section-reviews__block {
+        height: calc(100% - 30px);
+        width: calc(100% - 70px);
+        padding: 15px 35px;
+    }
 
 }
