@@ -131,7 +131,13 @@ openItem('section-menu__button', 'section-menu__button--active');
 
 function sliderDark (){
     $('.section-dark__сarousel').bxSlider({
-        slideWidth: 1100,
+        mode: 'horizontal',
+        infiniteLoop: true,
+        autoControls: false,
+        pager: true,
+        pagerType: 'full',
+        controls: true,
+        speed: 500
     });
 }
 
