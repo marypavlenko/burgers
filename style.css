@@ -328,7 +328,7 @@ html, body {
     display: flex;
     flex-direction: row;
     width: 90vw;
-    margin: auto 5vw;   
+    margin: 5vw;
 }
 
 .section-dark__сarousel {
@@ -426,6 +426,7 @@ html, body {
     font-size: 14px;
     color: white;
     line-height: 24px;
+    width: 500px;
 }
 .section-dark__title-sum {
     color: #e35028;
@@ -502,15 +503,6 @@ html, body {
 .section-dark__menu-icon--cheese {
     background-image: url(image/icons/cheese.svg);
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1304,6 +1296,10 @@ html, body {
         font-size: 40px;
     }
 
+    .section-dark__text {
+        width: 350px;
+    }
+
     /*Team block*/
     .section-team__text {
         width: 200px;
@@ -1434,14 +1430,11 @@ html, body {
     }
 
     .section-dark__carousel-item {
-        align-items: center;
+        display: flex;
         flex-direction: column;
+        align-items: center;
         max-width: 600px;
         max-height: 700px;
-    }
-
-    .bx-wrapper .bx-next {
-        right: 500px;
     }
 
     .section-dark__title {
@@ -1610,15 +1603,13 @@ html, body {
 
     /*Dark block*/
     .section-dark__carousel-item {
-        align-items: center;
-        flex-direction: column;
         max-width: 400px;
         max-height: 650px;
     }
 
-    .bx-wrapper .bx-next {
-        right: 620px;
-    }
+    /*.bx-wrapper .bx-next {*/
+        /*right: 0px;*/
+    /*}*/
 
     .section-dark__title {
         text-align: center;
@@ -1772,7 +1763,7 @@ html, body {
     }
 
     .bx-wrapper .bx-next {
-        right: 680px;
+        right: 10px;
     }
 
     .section-dark__title {
@@ -1883,10 +1874,6 @@ html, body {
         max-width: 300px;
     }
 
-    .bx-wrapper .bx-next {
-        left: 220px;
-    }
-
     .section-dark__text {
         max-width: 250px;
     }
@@ -1905,16 +1892,18 @@ html, body {
 
     .section-dark__title {
         font-size: 35px;
-        width: 200px;
+        flex-wrap: wrap;
     }
 
     .section-dark__text {
-        line-height: 20px;
-        margin-right: 50px;
+        font-size: 15px;
+        line-height: 15px;
+        flex-wrap: wrap;
     }
 
     .section-dark__title-sum {
         margin: 10px 0;
+        font-size: 20px;
     }
 
     .section-dark__text {
