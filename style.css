@@ -302,6 +302,7 @@ html, body {
 
     background-color: rgba(227, 80, 40, 0.4);
     border-radius: 5px;
+
     border: none;
 }
 
@@ -311,6 +312,8 @@ html, body {
     height: 44px;
     background-image: url(image/icons/burger.svg);
     background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
 }
 
 .section-dark__icon-text {
@@ -436,6 +439,81 @@ html, body {
     align-items: center;
     margin-left: 5px;
 }
+
+.section-dark__icon-block:hover .section-dark__menu{
+    opacity: 1;
+}
+
+.section-dark__menu {
+    /*display: none;*/
+    opacity: 0;
+    position: absolute;
+    width: 321px;
+    height: 332px;
+    left: 170px;
+    top: 90px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.section-dark__menu-item {
+    display: flex;
+    margin: 5px 0;
+    flex-direction: row;
+    list-style-type: none;
+}
+.section-dark__menu-header {
+    margin: 0 10px;
+    color: #2f3234;
+    font-family: UbuntuB;
+    font-size: 14px;
+}
+.section-dark__menu-text {
+    margin: 0;
+    right: 15px;
+    right: 10px;
+    color: #2f3234;
+    font-family: Ubuntu;
+    font-size: 14px;
+}
+
+
+.section-dark__menu-icon {
+    width: 43px;
+    height: 43px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+.section-dark__menu-icon--beef {
+    background-image: url(image/icons/beef.svg);
+}
+.section-dark__menu-icon--buns {
+    background-image: url(image/icons/buns.svg);
+}
+.section-dark__menu-icon--salad {
+    background-image: url(image/icons/salad.svg);
+}
+.section-dark__menu-icon--sauce {
+    background-image: url(image/icons/sauce.svg);
+}
+.section-dark__menu-icon--cucumber {
+    background-image: url(image/icons/cucumber.svg);
+}
+.section-dark__menu-icon--cheese {
+    background-image: url(image/icons/cheese.svg);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*Team block*/
 .section-team {
@@ -1273,6 +1351,22 @@ html, body {
         flex-direction: column;
     }
 
+    .input {
+        width: 80px;
+    }
+
+    .section-form__input-info {
+        width: 195px;
+    }
+
+    .section-form__input-street {
+        width: 415px;
+    }
+
+    .section-form__input-comment {
+        width: 415px;
+    }
+
     .section-form__column-submit {
         margin-top: 0;
     }
@@ -1343,6 +1437,41 @@ html, body {
         line-height: 18px;
         text-align: left;
     }
+
+    /*Dark block*/
+
+    .section-dark__calories-block {
+        right: 80px;
+        left: initial;
+        top: 90px;
+    }
+
+    .section-dark__carousel-item {
+        align-items: center;
+        flex-direction: column;
+        max-width: 600px;
+        max-height: 700px;
+    }
+
+    .bx-wrapper .bx-next {
+        right: 500px;
+    }
+
+    .section-dark__title {
+        text-align: center;
+    }
+
+    .section-dark__text {
+        text-align: center;
+        width: 550px;
+    }
+
+    .section-dark__order {
+        justify-content: center;
+    }
+
+
+
 
     /*Team block*/
     .section-team__block {
@@ -1492,6 +1621,42 @@ html, body {
         font-size: 50px;
     }
 
+    /*Dark block*/
+    .section-dark__carousel-item {
+        align-items: center;
+        flex-direction: column;
+        max-width: 400px;
+        max-height: 650px;
+    }
+
+    .bx-wrapper .bx-next {
+        right: 620px;
+    }
+
+    .section-dark__title {
+        text-align: center;
+    }
+
+    .section-dark__text {
+        text-align: center;
+        width: 400px;
+    }
+
+    .section-dark__order {
+        justify-content: center;
+    }
+
+    .section-dark__content-img {
+        min-width: 300px;
+    }
+
+    .section-dark__img-burger {
+        height: initial;
+    }
+
+
+
+
     /*Team block*/
     .section-team__title {
         margin: 10% 0 0 10%;
@@ -1612,6 +1777,40 @@ html, body {
         line-height: 18px;
     }
 
+    /*Dark block*/
+    .section-dark__carousel-item {
+        align-items: center;
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    .bx-wrapper .bx-next {
+        right: 680px;
+    }
+
+    .section-dark__title {
+        text-align: center;
+    }
+
+    .section-dark__text {
+        text-align: center;
+        width: 400px;
+    }
+
+    .section-dark__order {
+        justify-content: center;
+    }
+
+    .section-dark__content-img {
+        min-width: 300px;
+    }
+
+    .section-dark__img-burger {
+        height: initial;
+    }
+
+
+
     /*Work block*/
     .section-work__video {
         width: 380px;
@@ -1634,19 +1833,19 @@ html, body {
     }
 
     .input {
-        width: 200px;
+        width: 70px;
+    }
+
+    .section-form__input-info {
+        width: 172px;
     }
 
     .section-form__input-street {
-        width: 415px;
-    }
-
-    .section-form__input-house {
-        width: 88px;
+        width: 370px;
     }
 
     .section-form__input-comment {
-        width: 415px;
+        width: 370px;
         height: 50px;
     }
 
@@ -1692,6 +1891,54 @@ html, body {
         text-align: center;
     }
 
+    /*Dark block*/
+    .section-dark__carousel-item {
+        max-width: 300px;
+    }
+
+    .bx-wrapper .bx-next {
+        left: 220px;
+    }
+
+    .section-dark__text {
+        max-width: 250px;
+    }
+
+    .section-dark__content-img {
+        min-width: 150px;
+    }
+
+    .section-dark__img-burger {
+        height: initial;
+    }
+
+    .section-dark__order {
+        flex-direction: column;
+    }
+
+    .section-dark__title {
+        font-size: 35px;
+        width: 200px;
+    }
+
+    .section-dark__text {
+        line-height: 20px;
+        margin-right: 50px;
+    }
+
+    .section-dark__title-sum {
+        margin: 10px 0;
+    }
+
+    .section-dark__text {
+        margin: 0;
+    }
+
+
+
+
+
+
     /*Video block*/
     .section-work__video {
         width: 300px;
@@ -1700,19 +1947,19 @@ html, body {
 
     /*Form block*/
     .input {
-        width: 130px;
+        width: 45px;
+    }
+
+    .section-form__input-info {
+        width: 122px;
     }
 
     .section-form__input-street {
-        width: 280px;
-    }
-
-    .section-form__input-house {
-        width: 55px;
+        width: 270px;
     }
 
     .section-form__input-comment {
-        width: 280px;
+        width: 270px;
     }
 
     .nav-mobile__close-btn {
