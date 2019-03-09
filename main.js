@@ -146,13 +146,6 @@ function resizeSlider() {
 
 function sliderDark (){
     $('.section-dark__сarousel').bxSlider({
-<<<<<<< HEAD
-        // slideWidth: 1100,
-        minSlides: 1,
-        maxSlides: 1,
-        adaptiveHeight: true,
-        slideWidth: 1100
-=======
         mode: 'horizontal',
         infiniteLoop: true,
         autoControls: false,
@@ -160,7 +153,6 @@ function sliderDark (){
         pagerType: 'full',
         controls: true,
         speed: 500
->>>>>>> 99147f122cd4183c074b0fcf21c308d1d6c5d589
     });
 
     resizeSlider();
@@ -191,28 +183,6 @@ function toggleMenu() {
 }
 
 toggleMenu();
-
-// // Dark consist menu
-
-function consistMenu() {
-    var openDarkBtn = $('.section-dark__icon');
-    var closeDarkBtn = $('.section-dark__close-btn');
-    var menuDark = $('.section-dark__menu');
-
-    openDarkBtn.on('click', function (event) {
-        event.preventDefault();
-        menu.fadeIn();
-        $('body').addClass('scroll-hidden');
-    });
-
-    closeDarkBtn.on('click', function (event) {
-        event.preventDefault();
-        menu.fadeOut();
-        $('body').removeClass('scroll-hidden');
-    });
-}
-
-consistMenu();
 
 
 // Popup
@@ -279,7 +249,7 @@ function anchorScroll() {
             requestAnimationFrame(step);
           }
         }
-      });
+      };
     }
   }
 
