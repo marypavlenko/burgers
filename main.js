@@ -130,20 +130,6 @@ openItem('section-menu__button', 'section-menu__button--active');
 
 // Slider
 
-function resizeSlider() {
-    var slider =  $('.section-dark__сarousel').bxSlider();
-
-    if (window.innerWidth < 1200) {
-        console.log(1200);
-        slider.reloadSlider({
-            minSlides: 1,
-            maxSlides: 1,
-            adaptiveHeight: true,
-            slideWidth: 800
-        });
-    }
-}
-
 function sliderDark (){
     $('.section-dark__сarousel').bxSlider({
         mode: 'horizontal',
@@ -154,8 +140,6 @@ function sliderDark (){
         controls: true,
         speed: 500
     });
-
-    resizeSlider();
 }
 
 sliderDark();
