@@ -125,11 +125,7 @@ function openItem (btn, activeClass) {
 
 openItem('section-menu__button', 'section-menu__button--active');
 
-
-
-
 // Slider
-
 function sliderDark (){
     $('.section-dark__сarousel').bxSlider({
         mode: 'horizontal',
@@ -144,10 +140,7 @@ function sliderDark (){
 
 sliderDark();
 
-
-
 // Mobile menu
-
 function toggleMenu() {
     var openBtn = $('.nav__menu-burger');
     var closeBtn = $('.nav-mobile__close-btn');
@@ -168,9 +161,27 @@ function toggleMenu() {
 
 toggleMenu();
 
+// Dark menu
+function darkMenu() {
+    var openBtnDark = $('.section-dark__icon-block');
+    var closeBtnDark = $('.section-dark__close-menu');
+    var menuDark = $('.section-dark__menu');
+
+    openBtnDark.on('click', function (event) {
+        event.preventDefault();
+        menuDark.fadeIn();
+        menuDark.css('display', 'block');
+    });
+
+    closeBtnDark.on('click', function (event) {
+        event.preventDefault();
+        menuDark.fadeOut();
+    });
+}
+
+darkMenu();
 
 // Popup
-
 function popupSection () {
     var openBtn = $('.section-reviews__button');
     var closeBtn = $('.section-reviews__close-btn');

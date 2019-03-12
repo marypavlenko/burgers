@@ -7,36 +7,27 @@ html, body {
     overflow: hidden;
 }
 
-/**/
-
-
-
 /*Fronts*/
-
 @font-face{
     font-family: "Gagalin";
     src: url("fonts/Gagalin/Gagalin-Regular.otf");
     font-weight: normal;
 }
-
 @font-face{
     font-family: "Lifehack";
     src: url("fonts/Lifehack Medium.otf");
     font-weight: normal;
 }
-
 @font-face{
     font-family: "UbuntuB";
     src: url("fonts/Ubuntu/Ubuntu-B.ttf");
     font-weight: bold;
 }
-
 @font-face{
     font-family: "UbuntuL";
     src: url("fonts/Ubuntu/Ubuntu-Light.ttf");
     font-weight: normal;
 }
-
 @font-face{
     font-family: "UbuntuM";
     src: url("fonts/Ubuntu/Ubuntu-Medium.ttf");
@@ -362,19 +353,16 @@ html, body {
 
     -webkit-box-shadow: none;
 }
-
 .bx-viewport {
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
 }
-
 .bx-pager,
 .bx-default-pager {
     display: none;
 }
-
 .bx-wrapper .bx-next {
     width: 15px;
     height: 29px;
@@ -383,21 +371,17 @@ html, body {
     background-color: transparent;
     border: none;
  }
-
 .bx-wrapper .bx-prev {
     width: 15px;
     height: 29px;
     left: -18px;
-
     background: url(image/icons/arrow-left.svg) no-repeat;
     background-color: transparent;
     border: none;
 }
-
 .bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
     background-position: 0 0;
 }
-
 
 .section-dark__content-img {
     flex-basis: 55%;
@@ -432,29 +416,34 @@ html, body {
     font-family: Gagalin, serif;
     font-size: 30px;
 }
-
 .section-dark__order {
     display: flex;
     align-items: center;
     margin-left: 5px;
 }
 
-.section-dark__icon-block:hover + .section-dark__menu{
-    display: block;
-}
-
 .section-dark__menu {
-    display: none;
+    opacity: 0;
     position: absolute;
     width: 321px;
     height: 332px;
     left: 170px;
     top: 90px;
     z-index: 2;
-
     background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
 }
-
+.section-dark__close-menu {
+    position: absolute;
+    padding: 0;
+    right: 0;
+    margin: 20px;
+    width: 18px;
+    height: 18px;
+    background: url(image/icons/review-close.svg) no-repeat;
+    background-color: transparent;
+    border: none;
+}
 .section-dark__menu-item {
     display: flex;
     margin: 5px 0;
@@ -468,44 +457,38 @@ html, body {
     font-size: 14px;
 }
 .section-dark__menu-text {
+    position: absolute;
+    left: 200px;
     margin: 0;
-    right: 15px;
-    right: 10px;
     color: #2f3234;
     font-family: Ubuntu;
     font-size: 14px;
 }
-
-/*.section-dark__menu-icon {*/
-    /*width: 43px;*/
-    /*height: 43px;*/
-    /*background-repeat: no-repeat;*/
-    /*background-color: transparent;*/
-    /*border: none;*/
-/*}*/
-.section-dark__menu-icon--beef:before {
-    content: url("image/icons/beef.svg");
+.section-dark__menu-icon {
     width: 43px;
     height: 43px;
     background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
 }
-.section-dark__menu-icon--buns {
-    background-image: url(image/icons/buns.svg);
+.section-dark__menu-icon--beef:before {
+    content: url("image/icons/beef.svg");
 }
-.section-dark__menu-icon--salad {
-    background-image: url(image/icons/salad.svg);
+.section-dark__menu-icon--buns:before {
+    content: url("image/icons/buns.svg");
 }
-.section-dark__menu-icon--sauce {
-    background-image: url(image/icons/sauce.svg);
+.section-dark__menu-icon--salad:before {
+    content: url("image/icons/salad.svg");
 }
-.section-dark__menu-icon--cucumber {
-    background-image: url(image/icons/cucumber.svg);
+.section-dark__menu-icon--sauce:before {
+    content: url("image/icons/sauce.svg");
 }
-.section-dark__menu-icon--cheese {
-    background-image: url(image/icons/cheese.svg);
+.section-dark__menu-icon--cucumber:before {
+    content: url("image/icons/cucumber.svg");
 }
-
-
+.section-dark__menu-icon--cheese:before {
+    content: url("image/icons/cheese.svg");
+}
 
 /*Team block*/
 .section-team {
@@ -790,14 +773,12 @@ html, body {
 .section-reviews__button {
     margin-top: 15px;
     padding: 15px;
-
     text-decoration: none;
     font-family: UbuntuM, serif;
     font-weight: bold;
     font-size: 14px;
     color: white;
     text-transform: uppercase;
-
     background: #2f3234;
     border-radius: 5px;
     border: none;
@@ -1598,7 +1579,7 @@ html, body {
         left: 40px;
     }
     .section-dark__menu {
-        left: 120px;
+        left: 130px;
     }
 
 
@@ -1728,8 +1709,11 @@ html, body {
     .section-dark__img-burger {
         height: initial;
     }
+    .section-dark__menu {
+        left: 40px;
+    }
 
-    /*Work block*/
+        /*Work block*/
     .section-work__video {
         width: 380px;
         height: 300px;
@@ -1819,6 +1803,9 @@ html, body {
     .section-dark__title-sum {
         margin: 10px 0;
         font-size: 20px;
+    }
+    .section-dark__menu {
+        left: 0;
     }
 
     /*Video block*/
