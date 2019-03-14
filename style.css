@@ -423,7 +423,7 @@ html, body {
 }
 
 .section-dark__menu {
-    opacity: 0;
+    display: none;
     position: absolute;
     width: 321px;
     height: 332px;

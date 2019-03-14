@@ -170,7 +170,6 @@ function darkMenu() {
     openBtnDark.on('click', function (event) {
         event.preventDefault();
         menuDark.fadeIn();
-        menuDark.css('display', 'block');
     });
 
     closeBtnDark.on('click', function (event) {
