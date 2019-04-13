@@ -4,4 +4,5 @@ This is landing page for a burgers restaurant.
 
 What I used:
 * HTML & CSS;
+* Flexbox;
 * several scripts on JavaScript.
